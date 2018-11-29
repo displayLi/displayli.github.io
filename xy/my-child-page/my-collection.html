@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”default” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black-translucent” />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/public_style.css">
+    <link rel="stylesheet" href="../css/home_page.css">
+    <link rel="stylesheet" href="../css/tabBar_style.css">
+    <link rel="shortcut icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523981236938&di=40c290739ac03a479ada10f572effc60&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160829%2F1472440979308369.jpg">
+    <style>
+    .content-title p {
+        margin-bottom: 15px;
+    }
+
+    .main {
+        margin-bottom: 0;
+    }
+
+    .map-box {
+        position: relative;
+    }
+
+    .cancel-sc {
+        display: inline-block;
+        padding: 4px 8px 4px 26px;
+        border: 1px solid #222;
+        position: absolute;
+        right: 16px;
+        top: 6px;
+        z-index: 2;
+        font-size: 12px;
+    }
+
+    .cancel-sc::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 16px;
+        height: 16px;
+        background: url(../images/collect_successed.png) no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .cancel-img::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 16px;
+        height: 16px;
+        background: url(../images/collect_normal.png) no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 页面大盒子 -->
+    <div class="main">
+        <!-- tab -->
+        <div class="tab-box">
+            <div class="tab-bar"><a class="active" href="javascript:void(0);">宝贝</a></div>
+            <div class="tab-bar"><a href="javascript:void(0);">问答</a></div>
+            <i class="border-bottom"></i>
+        </div>
+        <!-- 消息 -->
+        <div class="tab-body-new">
+            <div class="content-box">
+                <div class="content-head">
+                    <a href="javascript:void(0);"><img src="http://img.alicdn.com/tps/i1/TB1iT_8IFXXXXcSXpXXcy0wIpXX-70-70.png" alt=""></a>
+                    <div class="name-box">
+                        <p class="name">会飞的煤气罐</p>
+                        <p class="time">1小时以前来过</p>
+                    </div>
+                    <div class="price">
+                        <span class="rmb">¥</span><span class="number">100</span>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <a href="javascript:void(0);">
+                    <span><img src="http://m.360buyimg.com//mobilecms/s276x276_jfs/t11962/205/1211313658/308637/69df1964/59fefa5dN28466c68.jpg!q70.jpg" alt=""></span>
+                    <span><img src="http://m.360buyimg.com//mobilecms/s276x276_jfs/t7255/138/3405591210/92717/f852c937/59f69315Nabce9bb3.jpg!q70.jpg" alt=""></span>
+                    <span><img src="http://img.alicdn.com/bao/uploaded/i2/1053812432/TB20H_ncpXXXXb0XpXXXXXXXXXX_!!1053812432.jpg_160x160.jpg" alt=""></span>
+                </a>
+                </div>
+                <div class="content-title">
+                    <p>爱国者（aigo） 爱国者Q62机械鼠标有线 电脑笔记本台式牧马人吃鸡宏电竞游戏鼠标 黑色【送大桌垫】</p>
+                </div>
+                <div class="map-box">
+                    <div class="map">
+                        <span class="from">来自<span class="diqu">北京</span></span>
+                        <span class="cancel-sc">取消收藏</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-head">
+                    <a href="javascript:void(0);"><img src="http://img.alicdn.com/tps/i1/TB1iT_8IFXXXXcSXpXXcy0wIpXX-70-70.png" alt=""></a>
+                    <div class="name-box">
+                        <p class="name">会飞的煤气罐</p>
+                        <p class="time-1day">1天前来过</p>
+                    </div>
+                    <div class="price">
+                        <span class="rmb">¥</span><span class="number">100</span>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <a href="javascript:void(0);">
+                    <span><img src="http://m.360buyimg.com//mobilecms/s276x276_jfs/t11962/205/1211313658/308637/69df1964/59fefa5dN28466c68.jpg!q70.jpg" alt=""></span>
+                    <span><img src="http://m.360buyimg.com//mobilecms/s276x276_jfs/t7255/138/3405591210/92717/f852c937/59f69315Nabce9bb3.jpg!q70.jpg" alt=""></span>
+                </a>
+                </div>
+                <div class="content-title">
+                    <p>爱国者（aigo） 爱国者Q62机械鼠标有线 电脑笔记本台式牧马人吃鸡宏电竞游戏鼠标 黑色【送大桌垫】</p>
+                </div>
+                <div class="map-box">
+                    <div class="map">
+                        <span class="from">来自<span class="diqu">北京</span></span>
+                        <span class="cancel-img cancel-sc">收藏</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-body-new">
+            什么都没有
+        </div>
+    </div>
+    </div>
+</body>
+<script src="../js/page_script.js"></script>
+<script src="../js/public_script.js"></script>
+
+</html>

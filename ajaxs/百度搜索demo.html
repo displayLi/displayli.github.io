@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery-3.2.1.js"></script>
+  <style>
+    *{
+      margin: 0;padding: 0;
+    }
+    .min{
+      margin: 100px auto;
+      line-height: 400px;
+      text-align: center;
+      width: 800px;
+      height: 400px;
+      position: relative;
+
+    }
+    #text{
+      width: 300px;
+      height: 10px;
+      padding: 10px;
+    }
+    #btn{
+      width: 100px;
+      height: 34px;
+      border: 1px solid #ccc;
+    }
+    #content{
+      width: 500px;
+      height: auto;
+      margin: 0 auto;
+      position: absolute;
+      top: 324px;
+      left: 50%;
+      margin-left: -250px;
+    }
+    #content ul{
+      list-style: none;
+    }
+    #content ul li{
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="min">
+    <input type="text" id="text">
+    <input type="button" value="百度一下" id="btn">
+  </div>
+  <div id="content"></div>
+</body>
+<script>
+  var text = document.querySelector('#text'),
+      btn = document.querySelector('#btn');
+  text.addEventListener('keyup',function(){
+    let val = text.value;
+    var url = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + val;
+    callback(url);
+  })
+
+  function callback(url){
+    document.getElementById('text').innerHTML = '';
+    $.ajax({
+      url: url,
+      type: 'get',
+      async:true,
+      dataType: 'jsonp',
+      jsonp:'cb',
+      success:function(data){
+        console.log(data.s);
+        var ul = $('<ul></ul>');
+        $.each(data.s,function(index,ele) {
+          var li = $('<li></li>').append(ele);
+          ul.append(li);
+        })
+        $('#content').html(ul);
+      },error:function(){
+          console.log("error");
+      }
+    })
+  }
+</script>
+</html>

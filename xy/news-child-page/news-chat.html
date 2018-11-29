@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”default” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black-translucent” />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>消息</title>
+    <link rel="stylesheet" href="../css/public_style.css">
+    <link rel="stylesheet" href="../css/tabBar_style.css">
+    <link rel="shortcut icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523981236938&di=40c290739ac03a479ada10f572effc60&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160829%2F1472440979308369.jpg">
+    <style type="text/css">
+    html,
+    body {
+        background-color: #f3f5f9;
+        height: 100%;
+        /* overflow: hidden; */
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .main {
+        margin-bottom: 0;
+    }
+
+    .chat-box {
+        margin-bottom: 100px;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .head-box {
+        width: 100%;
+        max-width: 640px;
+        min-width: 320px;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+    }
+
+    .return-btn {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../images/return-icon.png)no-repeat;
+        -webkit-background-size: 30px 30px;
+        background-size: 30px 30px;
+        background-position: 5px 10px;
+        cursor: pointer;
+    }
+
+    .introduce {
+        width: 100%;
+        height: 90px;
+        background-color: #fff;
+        position: fixed;
+        top: 50px;
+        margin: 0 auto;
+        max-width: 640px;
+        min-width: 320px;
+    }
+
+    .img-box {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        margin-left: 20px;
+        overflow: hidden;
+        float: left;
+    }
+
+    .img-box img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-box {
+        float: left;
+        font-size: 12px;
+        line-height: 20px;
+        color: #999;
+        padding-left: 18px;
+        padding-top: 16px;
+    }
+
+    .price {
+        font-weight: 500;
+        font-size: 16px;
+        color: #111;
+    }
+
+    .purchase-btn {
+        position: absolute;
+        right: 24px;
+        bottom: 14px;
+        background-color: #ff4444;
+        width: 74px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .purchase-btn a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .date-box:nth-of-type(1) {
+        padding-top: 162px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .date-box {
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .date {
+        font-size: 12px;
+        color: #fff;
+        padding: 2px 5px;
+        background-color: #ccc;
+        border-radius: 5px;
+    }
+
+    .my {
+        float: right;
+        margin-top: 24px;
+    }
+
+    .my-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        float: right;
+        margin-right: 18px;
+    }
+
+    .my-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .my-content {
+        max-width: 182px;
+        padding: 10px;
+        background-color: #ffda44;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-right: 70px;
+        line-height: 20px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, .1)
+    }
+
+    .you {
+        margin-top: 24px;
+        float: left;
+    }
+
+    .you-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        float: left;
+        margin-left: 18px;
+    }
+
+    .you-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .you-content {
+        max-width: 182px;
+        padding: 10px;
+        background-color: #fff;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-left: 70px;
+        line-height: 20px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, .1)
+    }
+
+    .foot-box {
+        position: fixed;
+        bottom: 0;
+        max-width: 640px;
+        min-width: 320px;
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        border-top: 1px solid #fefefe;
+        box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+        border-bottom: 1px solid #eee;
+    }
+
+    .foot-mike {
+        width: 26px;
+        height: 26px;
+        background: url(../images/chat_voice.png) no-repeat;
+        -webkit-background-size: 26px 26px;
+        background-size: 26px 26px;
+        background-position: center center;
+        padding: 12px;
+        float: left;
+    }
+
+    .input-box {
+        width: 72%;
+        height: 38px;
+        padding: 12px 50px 4px 0;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .input-box input {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        font-size: 14px;
+        border: 0;
+    }
+
+    .exp {
+        width: 26px;
+        height: 26px;
+        background: url(../images/face_icon.png) no-repeat;
+        -webkit-background-size: 26px 26px;
+        background-size: 26px 26px;
+        background-position: center center;
+        padding: 12px;
+        position: absolute;
+        right: 42px;
+    }
+
+    .more {
+        width: 28px;
+        height: 28px;
+        background: url(../images/mms_next.png) no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        padding: 11px;
+        position: absolute;
+        right: 0px;
+    }
+
+    .face-icon {
+        width: 100%;
+        height: 250px;
+        position: fixed;
+        bottom: -250px;
+        background-color: #fff;
+    }
+
+    .footer {
+        width: 100%;
+        height: 45px;
+        border-top: 1px solid #eee;
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+    }
+
+    .icon-active {
+        display: inline-block;
+        font-size: 0;
+        width: 60px;
+        height: 100%;
+        background: url(../expression/comui_emoji_e1.png)#f3f5f9 no-repeat;
+        -webkit-background-size: 30px 30px;
+        background-size: 30px 30px;
+        background-position: center center;
+    }
+
+    .icon-content {
+        width: 200%;
+    }
+
+    .icon-box {
+        width: 50%;
+        height: 100%;
+        float: left;
+        transform: translateX(0px);
+        padding-top: 8px;
+        margin: 0 auto;
+    }
+
+    .icon-txt {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .icon-txt span {
+        width: 12.5%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .icon-txt span img {
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+    }
+
+    .ctrl {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .ctrl i {
+        width: 5px;
+        height: 5px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .ctrl .active {
+        background-color: #fbc500;
+        border-color: #fbc500;
+    }
+
+    .history {
+        display: inline-block;
+        font-size: 0;
+        width: 60px;
+        height: 100%;
+        background: url(../images/comui_history.png) no-repeat;
+        -webkit-background-size: 30px 30px;
+        background-size: 30px 30px;
+        background-position: center center;
+    }
+
+    .sub {
+        display: inline-block;
+        float: right;
+        width: 60px;
+        height: 100%;
+        background-color: #ffd53b;
+        text-align: center;
+        font-size: 14px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+
+    #txt {
+        outline: none;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        word-wrap: normal;
+        overflow: hidden;
+    }
+
+
+    #txt::before {
+        content: attr(placeholder);
+        color: #ccc;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="head-box">
+            <h4 class="title">会飞的煤气罐</h4>
+            <i class="return-btn"></i>
+        </header>
+        <section class="introduce">
+            <div class="img-box">
+                <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4279330932,2979179416&fm=27&gp=0.jpg" alt="">
+            </div>
+            <div class="text-box">
+                <div class="price">¥<span>45.00</span></div>
+                <div class="freight"><span class="freight-font">含运费</span><span class="freight-num">10.00</span><span class="rmb">元</span></div>
+                <div class="botm-text">交易前聊一聊</div>
+            </div>
+            <div class="purchase-btn">
+                <a href="../purchase/purchase.html">立即购买</a>
+            </div>
+        </section>
+        <div class="chat-box">
+            <div class="date-box">
+                <span class="date">2018年04月18日&nbsp;<span class="time-text">18:54</span></span>
+            </div>
+            <div class="clearfix">
+                <div class="my">
+                    <div class="my-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524243405513&di=b8cb3570a037a97464267728c327d4a7&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fblog%2F201510%2F04%2F20151004221917_UMGcd.thumb.700_0.jpeg" alt="">
+                    </div>
+                    <div class="my-content">大家好我是闲言前端的开发者</div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="you">
+                    <div class="you-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524244285518&di=14d6add880bf94e055bd6ac48e478658&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fq_mini%2Cc_zoom%2Cw_640%2Fupload%2F20170510%2Fda0559dcf89d4d61a6191e9f6a03f695.jpg" alt="">
+                    </div>
+                    <div class="you-content">小伙子快来约一下，晚上吃个饭啊</div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="my">
+                    <div class="my-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524243405513&di=b8cb3570a037a97464267728c327d4a7&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fblog%2F201510%2F04%2F20151004221917_UMGcd.thumb.700_0.jpeg" alt="">
+                    </div>
+                    <div class="my-content">不好意思大佬，我不搞基</div>
+                </div>
+            </div>
+            <div class="date-box">
+                <span class="date">2018年04月18日&nbsp;<span class="time-text">18:54</span></span>
+            </div>
+            <div class="clearfix">
+                <div class="you">
+                    <div class="you-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524244285518&di=14d6add880bf94e055bd6ac48e478658&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fq_mini%2Cc_zoom%2Cw_640%2Fupload%2F20170510%2Fda0559dcf89d4d61a6191e9f6a03f695.jpg" alt="">
+                    </div>
+                    <div class="you-content">装逼，擦</div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="you">
+                    <div class="you-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524244285518&di=14d6add880bf94e055bd6ac48e478658&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fq_mini%2Cc_zoom%2Cw_640%2Fupload%2F20170510%2Fda0559dcf89d4d61a6191e9f6a03f695.jpg" alt="">
+                    </div>
+                    <div class="you-content">没劲，找其他小伙去了</div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-box">
+            <div class="foot-content">
+                <div class="foot-mike"></div>
+                <div class="input-box">
+                    <input type="enter" placeholder="想跟TA说点什么呢" data-id='input' data-type="original-enter" style="display: none;">
+                    <div id="txt" data-id='input' data-type="enter" placeholder="想跟TA说点什么呢" contenteditable="true"></div>
+                </div>
+                <div class="exp"></div>
+                <div class="more"></div>
+            </div>
+        </div>
+        <div class="face-icon">
+            <div class="icon-content clearfix">
+                <div class="icon-box">
+                    <div class="icon-txt">
+                    </div>
+                </div>
+                <div class="icon-box">
+                    <div class="icon-txt icon2">
+                    </div>
+                </div>
+            </div>
+            <div class="ctrl">
+                <i class="active"></i>
+                <i></i>
+            </div>
+            <div class="footer">
+                <i class="icon-active"></i><i class="history"></i>
+                <span class="sub">发送</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+// js返回上一个页面
+document.querySelector('.return-btn').addEventListener('click', () => {
+    window.location.href = '../news.html';
+})
+
+//  点击弹出表情窗口
+let icon_bq = document.querySelector('.exp'),
+    face_icon = document.querySelector('.face-icon'),
+    foot_box = document.querySelector('.foot-box'),
+    face_h = face_icon.offsetHeight;
+icon_bq.addEventListener('click', () => {
+    face_icon.style.bottom = 0;
+    face_icon.style.transition = 'bottom .3s';
+    foot_box.style.bottom = face_h + 'px';
+    foot_box.style.transition = 'bottom .3s';
+})
+// 点击隐藏表情框
+var chat_box = document.querySelector('.chat-box');
+chat_box.addEventListener('click',()=>{
+    face_icon.style.bottom = -face_h + 'px';
+    face_icon.style.transition = 'bottom .3s';
+    foot_box.style.bottom = 0;
+    foot_box.style.transition = 'bottom .3s';
+})
+
+// 遍历表情路径
+let icon_txt = document.querySelector('.icon-txt');
+for (var i = 1; i < 31; i++) {
+    let span = document.createElement('span');
+    let img = new Image();
+    img.setAttribute('src', '../expression/comui_emoji_e' + i + '.png');
+    span.appendChild(img);
+    icon_txt.appendChild(span);
+}
+
+let icon_txt1 = document.getElementsByClassName('icon-txt')[1];
+for (var i = 31; i < 53; i++) {
+    let span = document.createElement('span');
+    let img = new Image();
+    img.setAttribute('src', '../expression/comui_emoji_e' + i + '.png');
+    span.appendChild(img);
+    icon_txt1.appendChild(span);
+}
+
+//获取所有的span点击添加到input输入框中
+
+let icon_img = icon_txt.getElementsByTagName('img'),
+    input_txt = document.querySelector('#txt');
+input_txt.addEventListener('focus', () => {
+    input_txt.setAttribute('placeholder','');
+    face_icon.style.bottom = -face_h + 'px';
+    face_icon.style.transition = 'bottom .3s';
+    foot_box.style.bottom = 0;
+    foot_box.style.transition = 'bottom .3s';
+
+    //设置ios端兼容，键盘弹出不被输入法遮住
+    setTimeout(function(){ 
+            document.body.scrollTop = document.body.scrollHeight; 
+     },300); 
+})
+input_txt.addEventListener('blur', () => {
+    if (input_txt.innerHTML == '') {
+        input_txt.setAttribute('placeholder','想跟TA说点什么呢');
+    }
+    face_icon.style.bottom = -face_h + 'px';
+    face_icon.style.transition = 'bottom .3s';
+    foot_box.style.bottom = 0;
+    foot_box.style.transition = 'bottom .3s';
+})
+// 点击添加表情
+for (let i = 0; i < icon_img.length; i++) {
+    icon_img[i].addEventListener('click', () => {
+        input_txt.setAttribute('placeholder','');
+        input_txt.innerHTML += '<img style="width:26px; height="26px" src="../expression/comui_emoji_e' + (i+1) + '.png" alt="">';
+    })
+}
+
+let icon2 = document.querySelector('.icon2').children;
+for (let i = 0; i < icon2.length; i++) {
+    icon2[i].addEventListener('click',()=>{
+        input_txt.setAttribute('placeholder','');
+        input_txt.innerHTML += '<img style="width:26px; height="26px" src="../expression/comui_emoji_e' + (i+31) + '.png" alt="">';
+    })
+}
+
+
+//  创建滑动效果
+let icon_box = document.querySelector('.icon-content'),
+    ctrl_num = document.querySelectorAll('.ctrl i');
+let index = 0,
+    move = null,
+    startX = null,
+    offsetw = icon_txt.offsetWidth;
+
+// 注册手指按下屏幕事件
+icon_box.addEventListener('touchstart', (e) => {
+    icon_box.style.transition = '';
+    startX = e.touches[0].clientX;
+})
+
+// 注册手指滑动事件
+icon_box.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    move = e.touches[0].clientX - startX;
+    icon_box.style.transform = 'translateX(' + -index * offsetw + 'px)';
+})
+
+// 注册手指弹起事件
+icon_box.addEventListener('touchend', (e) => {
+    e.stopPropagation();
+
+    var maxDistance = offsetw / 8;
+    // 判断 是否超过
+    if (Math.abs(move) > maxDistance) {
+        // 判断 到底是 往左 还是往右移动
+        if (move > 0) {
+            index = 0;
+            //  先清除当前的样式类在赋值
+            ctrl_num[1].className = '';
+            ctrl_num[0].className = 'active';
+        } else {
+            index = 1;
+            //  先清除当前的样式类在赋值
+            ctrl_num[0].className = '';
+            ctrl_num[1].className = 'active';
+        }
+        // 为了好看 将 过渡效果开启
+        icon_box.style.transition = 'all 0.3s';
+        icon_box.style.transform = 'translateX(' + -index * offsetw + 'px)';
+    } else {
+        icon_box.style.transition = 'all 0.3s';
+        icon_box.style.transform = 'translateX(' + -index * offsetw + 'px)';
+    }
+})
+
+</script>
+
+</html>

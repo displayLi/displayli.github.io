@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”default” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black-translucent” />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/public_style.css">
+    <link rel="stylesheet" href="css/home_page.css">
+    <link rel="stylesheet" href="css/tabBar_style.css">
+    <link rel="shortcut icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523981236938&di=40c290739ac03a479ada10f572effc60&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160829%2F1472440979308369.jpg">
+    <style>
+    html,
+    body {
+        background-color: #f3f5f9;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+
+    .content-head {
+        background-color: #fff;
+        padding-top: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .content-head a {
+        margin-top: 4px;
+        width: 38px;
+        height: 38px;
+    }
+
+    .contents-box {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .contents-box .price {
+        float: left;
+        padding: 10px 0;
+    }
+
+    .contents-box .price span.number {
+        font-size: 20px;
+    }
+
+    .name-box .name {
+        margin-right: 24px;
+    }
+
+    .cont-text {
+        padding: 0 18px;
+        background-color: #fff;
+    }
+
+    .cont-text .text {
+        text-align: left;
+        letter-spacing: 1px;
+        padding-bottom: 18px;
+    }
+
+    .cont-img {
+        box-sizing: border-box;
+        padding: 0 20px;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+    }
+
+    .cont-img .img-parent {
+        padding-bottom: 6px;
+    }
+
+    .img-parent img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cont-botm {
+        padding: 15px 20px;
+        background-color: #fff;
+    }
+
+    .my-top {
+        padding: 10px 20px 0 20px;
+        margin-top: 10px;
+        background-color: #fff;
+    }
+
+    .data-box {
+        float: left;
+        max-width: 180px;
+        min-width: 30px;
+        word-wrap: normal;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        padding-right: 30px;
+        overflow: hidden;
+    }
+
+    .data-box .name {
+        font-size: 16px;
+        color: #111;
+        letter-spacing: .3px;
+        padding-top: 10px;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+
+    .data-box .my-style {
+        font-size: 14px;
+        color: #ccc;
+        padding-top: 6px;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+
+    .my-img {
+        width: 50px;
+        height: 50px;
+        float: right;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .my-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .renzheng-box {
+        font-size: 12px;
+        color: #888;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        background-color: #fff;
+    }
+
+    .renzheng {
+        display: inline-block;
+        padding-top: 10px;
+        margin-left: 20px;
+        position: relative;
+    }
+
+    .renzheng::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 11px;
+        width: 16px;
+        height: 16px;
+        background: url(images/user.png) no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .my-icon {
+        display: inline-block;
+        margin-left: 30px;
+        position: relative;
+    }
+
+    .my-icon::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        width: 16px;
+        height: 16px;
+        background: url(images/credit_un_confirm.png) no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .eval-box {
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mar-eval {
+        margin-top: 10px;
+    }
+
+    .eval-head {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 20px;
+    }
+
+    .eval-user {
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .eval-img {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .eval-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .eval-name {
+        position: absolute;
+        top: 6px;
+        left: 56px;
+        color: #888;
+    }
+
+    .zan {
+        position: absolute;
+        right: 26px;
+        top: 2px;
+        width: 25px;
+        height: 25px;
+        background: url(images/favour_yes_small.png)no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .eval-content {
+        padding: 2px 10px 10px 50px;
+    }
+
+    .date-time {
+        padding-top: 10px;
+    }
+
+    .eval-content p {
+        color: #888;
+        font-size: 12px;
+        min-width: 100px;
+        max-width: 400px;
+    }
+
+    .eval-content p:nth-of-type(1) {
+        font-size: 14px;
+        color: #222;
+    }
+
+    .pad-top {
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    .eval-hf {
+        margin-left: 40px;
+        padding-right: 80px;
+        border-top: 1px solid #eee;
+        border-bottom: 0;
+    }
+
+    .eval-hf p {
+        padding-right: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 页面大盒子 -->
+    <div class="main">
+        <div class="content-head">
+            <a href="javascript:void(0);"><img src="http://img.alicdn.com/tps/i1/TB1iT_8IFXXXXcSXpXXcy0wIpXX-70-70.png" alt=""></a>
+            <div class="name-box">
+                <p class="name">会飞的煤气罐</p>
+                <p class="time"><span>3天前来过</span>&nbsp;<span>发布于佛山</span></p>
+            </div>
+        </div>
+        <div class="contents-body">
+            <div class="contents-box clearfix">
+                <div class="price">
+                    <span class="rmb">¥</span><span class="number">100</span>
+                </div>
+            </div>
+            <div class="cont-text">
+                <p class="text">爱国者（aigo） 爱国者Q62机械鼠标有线 电脑笔记本台式牧马人吃鸡宏电竞游戏鼠标 黑色【送大桌垫】爱国者（aigo） 爱国者Q62机械鼠标有线 电脑笔记本台式牧马人吃鸡宏电竞游戏鼠标 黑色【送大桌垫】</p>
+            </div>
+            <div class="cont-img">
+                <p class="img-parent">
+                    <img src="http://h.hiphotos.baidu.com/image/pic/item/cdbf6c81800a19d88371d06a3ffa828ba61e466a.jpg" alt="">
+                </p>
+                <p class="img-parent">
+                    <img src="http://f.hiphotos.baidu.com/image/pic/item/3ac79f3df8dcd1007fde3f4e7e8b4710b9122f1b.jpg" alt="">
+                </p>
+                <p class="img-parent">
+                    <img src="http://h.hiphotos.baidu.com/image/pic/item/21a4462309f790525fe7185100f3d7ca7acbd5e1.jpg" alt="">
+                </p>
+                <p class="img-parent">
+                    <img src="http://g.hiphotos.baidu.com/image/pic/item/a6efce1b9d16fdfa39541e82b88f8c5494ee7ba6.jpg" alt="">
+                </p>
+            </div>
+            <div class="cont-botm">
+                <span>• 浏览<span>1088</span></span>
+            </div>
+            <div class="my-top clearfix">
+                <div class="data-box">
+                    <h4 class="name">会飞的煤气罐</h4>
+                    <p class="my-style">虽然没赚到钱，但在心语开心就好</p>
+                </div>
+                <div class="my-img">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524307600368&di=c1e4bd495832255e62e1123bcb6a9122&imgtype=0&src=http%3A%2F%2Fmvimg2.meitudata.com%2F556d028d54cba6125.jpg" alt="">
+                </div>
+            </div>
+            <div class="renzheng-box">
+                <span class="renzheng">实人认证已通过</span>
+                <span class="my-icon">芝麻信用为授权</span>
+            </div>
+            <!-- ========================================= 留言 ================================================== -->
+            <div class="eval-box mar-eval">
+                <div class="eval-head">收到4回复</div>
+                <div class="eval-user">
+                    <a class="eval-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524412097979&di=9920b8e70e084aff5320d555dead4ab6&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201508%2F11%2F20150811125021_x2zM8.thumb.700_0.jpeg" alt="">
+                    </a>
+                    <span class="eval-name">tb10325748</span>
+                    <i class="zan"></i>
+                </div>
+                <div class="eval-content">
+                    <p>很期待下次为你服务！很期待下次为你服务！很期待下次为你服务！很期待下次为你服务！很期待下次为你服务！很期待下次为你服务！很期待下次为你服务！很期待下次为你服务！很期待下次为你服务！很期待下次为你服务！</p>
+                    <p class="date-time"><span>2017-07-21</span>&nbsp;<span>13:00:16</span></p>
+                </div>
+            </div>
+            <div class="eval-box pad-top">
+                <div class="eval-user">
+                    <a class="eval-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524412097979&di=9920b8e70e084aff5320d555dead4ab6&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201508%2F11%2F20150811125021_x2zM8.thumb.700_0.jpeg" alt="">
+                    </a>
+                    <span class="eval-name">tb10325748</span>
+                    <i class="zan"></i>
+                </div>
+                <div class="eval-content">
+                    <p>很期待下次为你服务！</p>
+                    <p class="date-time"><span>2017-07-21</span>&nbsp;<span>13:00:16</span></p>
+                </div>
+                <!-- 回复评论 -->
+                <div class="eval-box pad-top eval-hf">
+                    <div class="eval-user">
+                        <a class="eval-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524412097979&di=9920b8e70e084aff5320d555dead4ab6&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201508%2F11%2F20150811125021_x2zM8.thumb.700_0.jpeg" alt="">
+                    </a>
+                        <span class="eval-name">tb10325748</span>
+                    </div>
+                    <div class="eval-content">
+                        <p><span>回复@会飞的煤气罐：</span>改改改该你大爷啊改，凑，老哥，上线了给我看看哈让我也爽爽</p>
+                        <p class="date-time"><span>2017-07-21</span>&nbsp;<span>13:00:16</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-box pad-top">
+                <div class="eval-user">
+                    <a class="eval-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524412097979&di=9920b8e70e084aff5320d555dead4ab6&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201508%2F11%2F20150811125021_x2zM8.thumb.700_0.jpeg" alt="">
+                    </a>
+                    <span class="eval-name">tb10325748</span>
+                    <i class="zan"></i>
+                </div>
+                <div class="eval-content">
+                    <p>很期待下次为你服务！</p>
+                    <p class="date-time"><span>2017-07-21</span>&nbsp;<span>13:00:16</span></p>
+                </div>
+            </div>
+            <!-- ========================================= 未留言 ============================================== -->
+            <!--  <div class="not-ly-box">
+                <div class="not-ly">
+                    <div class="not-ly-head">留言</div>
+                    <div class="not-ly-body">
+                        <a href="javascript:void(0);" class="ly-body-img">
+                            <img src="images/comment_empty.png" alt="">
+                        </a>
+                        <p class="ly-body-text">还没有人留言，还不快来抢沙发...</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    </div>
+    <div class="tabBar">
+        <ul class="tabBar-ul">
+            <li class="tabBar-li">
+                <a href="javascript:void(0);">
+                    <img src="images/collect_detail_fail.png" alt="">
+                    <p class="tabbar-text">收藏</p>
+                </a>
+            </li>
+            <li class="tabBar-li lys-btn">
+                <a href="javascript:void(0);">
+                    <img src="images/taolive_comment.png" alt="">
+                    <p class="tabbar-text">留言</p>
+                </a>
+            </li>
+            <li class="goto_myshopping">
+                <a href="news-child-page/news-chat.html">
+                    <p class="tabbar-text">我想要</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="foot-box">
+        <div class="foot-content">
+            <div class="foot-mike"></div>
+            <div class="input-box">
+                <input type="enter" autofocus="autofocus" placeholder="想跟TA说点什么呢" data-id='input' data-type="original-enter" style="display: none;">
+                <div id="txt" data-id='input' autofocus="autofocus" data-type="enter" placeholder="想跟TA说点什么呢" contenteditable="true"></div>
+            </div>
+            <div class="more"></div>
+        </div>
+    </div>
+</body>
+<style>
+.not-ly-box {
+    width: 100%;
+    margin-top: 12px;
+    background-color: #fff;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.not-ly {
+    width: 100%;
+}
+
+.not-ly-head {
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+.not-ly-body {
+    padding-top: 58px;
+    text-align: center;
+}
+
+.not-ly-body .ly-body-img {
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.not-ly-body a img {
+    width: 100%;
+    height: 100%;
+}
+
+.ly-body-text {
+    color: #888;
+    padding-top: 16px;
+}
+
+
+.ly-btn {
+    padding: 5px 20px;
+    background-color: #ffd53b;
+    height: 0;
+}
+
+.tabBar-li {
+    padding-top: 10px;
+    padding-left: 22px;
+}
+
+.tabBar-li img {
+    float: left;
+}
+
+.tabBar-li p {
+    float: left;
+    padding: 2px 0 0 4px;
+}
+
+.goto_myshopping {
+    float: right;
+    width: 68px;
+    height: 100%;
+    text-align: center;
+    padding: 7px 4px;
+    margin: 10px 16px 0 0;
+    background-color: red;
+    color: #fff;
+}
+
+.goto_myshopping a {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+
+
+/* 留言点击样式 */
+
+.foot-box {
+    position: fixed;
+    bottom: 0;
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid #fefefe;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+    border-bottom: 1px solid #eee;
+    display: none;
+}
+
+.foot-mike {
+    width: 30px;
+    height: 30px;
+    background: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3011570960,4070138733&fm=27&gp=0.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    /* padding: 12px; */
+    margin: 8px 10px 0 10px;
+    float: left;
+    border-radius: 4px;
+}
+
+.input-box {
+    width: 72%;
+    height: 30px;
+    box-sizing: border-box;
+    float: left;
+    background-color: #eee;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 9px;
+}
+
+.input-box input {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 14px;
+    border: 0;
+}
+
+.exp {
+    width: 26px;
+    height: 26px;
+    background: url(images/face_icon.png) no-repeat;
+    -webkit-background-size: 26px 26px;
+    background-size: 26px 26px;
+    background-position: center center;
+    padding: 12px;
+    position: absolute;
+    right: 42px;
+}
+
+.more {
+    width: 28px;
+    height: 28px;
+    background: url(images/mms_next.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    padding: 11px;
+    position: absolute;
+    right: 0px;
+}
+
+
+#txt {
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+
+#txt::before {
+    content: attr(placeholder);
+    color: #ccc;
+}
+</style>
+<script>
+let lys_btn = document.querySelector('.lys-btn'),
+    foot_box = document.querySelector('.foot-box'),
+    tabBar = document.querySelector('.tabBar'),
+    txt = document.querySelector('#txt');
+txt.onfocus = function() {
+    //设置ios端兼容，键盘弹出不被输入法遮住
+    this.setAttribute('placeholder', '');
+    setTimeout(function() {
+        document.body.scrollTop = document.body.scrollHeight;
+    }, 300);
+}
+txt.onblur = function() {
+    this.setAttribute('placeholder', '点此输入想说的话哦');
+}
+
+lys_btn.addEventListener('click', () => {
+    foot_box.style.display = 'block';
+    tabBar.style.display = 'none';
+});
+
+
+document.querySelector('.contents-body').addEventListener('click', (e) => {
+    foot_box.style.display = 'none';
+    tabBar.style.display = 'block';
+})
+</script>
+
+</html>

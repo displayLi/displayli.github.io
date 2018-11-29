@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			margin: 100px auto;
+			width: 340px;
+			height: 500px;
+			background:url(http://a.hiphotos.baidu.com/image/pic/item/0824ab18972bd407bd49abdc77899e510fb30900.jpg);	
+			position: relative;
+			border: 1px solid #ccc;
+		}
+		.fk{
+			width: 100%;
+			height: 80px;
+			background-color: #fff;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			overflow:hidden;
+		}
+		.yuan{
+			width: 100px;
+			height: 100px;
+			background:url(http://a.hiphotos.baidu.com/image/pic/item/0824ab18972bd407bd49abdc77899e510fb30900.jpg);
+			background-position:-118px -371px;
+			position: absolute;
+			border-radius: 50%;
+			bottom: 30px;
+			left: 50%;
+			margin-left:-51px; 
+			z-index: 3;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="fk">
+			<div class="yuan"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>快递查询</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.box{
+			width: 500px;
+			height: auto;
+			border: 1px solid #ccc;
+			margin: 100px auto;
+			text-align: center;
+			padding-bottom:100px; 
+		}
+		.txt{
+			width: 260px;
+			padding: 10px;
+		}
+		.btn{
+			width: 62px;
+			height: 40px;
+			border-radius: 5px;
+			outline: none;
+		}
+		.text{
+			margin-top: 30px;
+		}
+		img{
+			margin-top:78px; 
+			vertical-align:bottom;
+		}
+		ul{
+			list-style: none;
+			text-align: left;
+		}
+		li{
+			width: 400px;
+			height: 100px;
+			margin-left: 50px;
+		}
+		li:nth-child(1){
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="https://cdn.kuaidi100.com/images/logo.png?version=201707191039" alt="kuadi100.com">
+		<form>
+			<label for="txt">请输入单号：</label>
+			<input type="text" class="txt" id="code" name="code" placeholder="请在这里输入单号...">
+			<input type="submit" value="查询" class="btn">
+		</form>
+		<div class="text"></div>
+	</div>
+</body>
+</html>
+<script>
+	var code = document.querySelector('#code'),
+		btn = document.querySelector('.btn'),
+		text = document.querySelector('.text');
+
+		btn.addEventListener('click',function(e){
+			e.preventDefault();
+			var xhr = null;
+			try{
+				xhr = new XMLHttpRequest();
+			}catch(e){
+				xhr = new ActiveXObject('Microsoft.XMLHTTTP');
+			}
+
+			xhr.open('get','kuaidi_data.php?code='+code.value,true);
+
+			xhr.send(null);
+
+			xhr.addEventListener('readystatechange',function(){
+				if (xhr.readyState == 4 && xhr.status == 200) {
+					var data = JSON.parse(xhr.responseText);
+					if (data.status == 0) {
+						var data_key = data.data.info.context;
+						var tag = '';
+						for ( var i in data_key ){
+							var item = data_key[i];
+							var desc = item.desc;
+							var t = new Date();
+							t.setTime(item.time + '000');
+							var str = t.getFullYear()+'年'+(t.getMonth()+1)+'月'+t.getDay()+'日'+(t.getHours()>12?' 下午':' 上午')+t.getHours()%12+':'+t.getMinutes()+':'+t.getSeconds();
+							tag += '<li><div>'+ str +'</div><div>'+ desc +'</div></li>'
+						}
+						var ul = document.createElement('ul');
+						ul.innerHTML = tag;
+						text.appendChild(ul);
+					}else{
+						var his = data.msg;
+						text.innerHTML = his;
+					}
+				}
+			})
+		})
+
+		//  获取焦点时选中所有的input值
+		code.addEventListener('focus',function(){
+			this.select();
+			text.innerHTML = '';
+		})
+
+</script>
+
+
+
+
+
+
+
+
+

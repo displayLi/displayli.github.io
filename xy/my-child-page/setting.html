@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”default” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black-translucent” />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>消息</title>
+    <link rel="stylesheet" href="../css/public_style.css">
+    <link rel="shortcut icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523981236938&di=40c290739ac03a479ada10f572effc60&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160829%2F1472440979308369.jpg">
+    <style type="text/css">
+    html,
+    body {
+        background-color: #f3f5f9;
+        height: 100%;
+        /* overflow: hidden; */
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .my-buy,
+    .my-collection {
+        width: 84%;
+        height: 50px;
+        line-height: 50px;
+        margin-left: 38px;
+        position: relative;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+
+     .menu-num {
+        float: right;
+        margin-right: 32px;
+        color: #666;
+    }
+
+    .exp {
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    .menu {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .right {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background: url(../images/ic_list_arrow.png) no-repeat;
+        background-position: center center;
+        -webkit-background-size: 20px 20px;
+    }
+    .login{
+        box-sizing: border-box;
+        padding: 30px 10px;
+        text-align: center;
+    }
+    .login a{
+        display: inline-block;
+        padding: 10px 50px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: red;
+        font-weight: 500;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <a href="my-child-page/my-buying.html">
+                <div class="my-buy">
+                    <i class="icon buy"></i>
+                    <span class="menu-name">关于我们</span>
+                    <i class="right"></i>
+                </div>
+            </a>
+            <a href="my-child-page/my-collection.html">
+                <div class="my-collection">
+                    <i class="icon collection"></i>
+                    <span class="menu-name">加入我们</span>
+                    <i class="right"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="my-collection">
+                    <i class="icon set"></i>
+                    <span class="menu-name">用户协议</span>
+                    <i class="right"></i>
+                </div>
+            </a>
+        </div>
+        <div class="login">
+            <a href="javascript:void(0);">退出登陆</a>
+        </div>
+    </div>
+</body>
+
+</html>

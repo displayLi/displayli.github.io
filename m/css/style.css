@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Microsoft YaHei";
+}
+
+.header-bar {
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cont-style {
+  height: 100%;
+  line-height: 88px;
+}
+
+.hd-style {
+  height: 100%;
+  line-height: 40px;
+}
+
+.row .hd-box {
+  border-right: 1px solid #ccc;
+  color: #888;
+  padding: 0 15px 0 0;
+}
+
+.row div:nth-child(4) {
+  border: none;
+}
+
+.link-hover {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+}
+
+.link-hover:hover {
+  text-decoration: none;
+  color: #888;
+}
+
+.link-hover:hover .img-box {
+  display: block;
+}
+
+@font-face {
+  font-family: 'iconText';
+  src: url('../lib/bootstrap/fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'), url('../lib/bootstrap/fonts/glyphicons-halflings-regular.svg') format('svg'), url('../lib/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../lib/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../lib/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2');
+}
+
+[class^='icon-'], [class*=' -icon'], [class*='icon-'] {
+  font-family: 'iconText';
+}
+
+.icon-logolink-logo:before {
+  content: "\e900";
+  color: #fff;
+  font-size: 66px;
+}
+
+i {
+  font-style: normal;
+}
+
+.icon-iphone::before {
+  content: '\e145';
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.icon-bottom::before {
+  content: '\e114';
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.img-box {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -70px;
+  z-index: 1001;
+}
+
+.img-box img {
+  width: 140px;
+  height: 140px;
+}
+
+.img-box p {
+  background-color: #fff;
+  margin-top: -15px;
+  color: #000;
+}
+
+.icon-tel::before {
+  content: '\e182';
+  font-size: 13px;
+}
+
+.row .btn-danger {
+  background-color: red;
+  padding: 5px 10px;
+}
+
+.navbar-itcast {
+  background-color: #111;
+  margin-bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  top: 0;
+  : border-radius:
+}
+
+.navbar-itcast .navbar-brand {
+  color: #fff;
+  padding-bottom: 77px;
+  padding-left: 8px;
+  padding-right: 32px;
+}
+
+.navbar-itcast .navbar-brand:hover, .navbar-itcast .navbar-brand:focus {
+  background-color: transparent;
+}
+
+.navbar-itcast .navbar-text {
+  color: #777;
+}
+
+.navbar-itcast .navbar-nav>li>a {
+  color: #fff;
+  padding: 36px 25px;
+}
+
+.navbar-itcast .navbar-nav>li>a:hover, .navbar-itcast .navbar-nav>li>a:focus {
+  color: red;
+  font-weight: bold;
+  background-color: transparent;
+  border-bottom: 2px solid #f00;
+}
+
+.navbar-itcast .navbar-nav>.active>a, .navbar-itcast .navbar-nav>.active>a:hover {
+  color: red;
+  background-color: transparent;
+  border-bottom: 2px solid red;
+  font-weight: bold;
+}
+
+.navbar-itcast .navbar-toggle {
+  border-color: #fff;
+}
+
+.navbar-itcast .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-itcast .navbar-collapse, .navbar-itcast .navbar-form {
+  color: #fff;
+  background-color: #111;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.navbar-itcast .navbar-nav>.open>a, .navbar-itcast .navbar-nav>.open>a:hover, .navbar-itcast .navbar-nav>.open>a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.navbar-itcast .navbar-right .de-hover a:hover, .navbar-itcast .navbar-right .de-hover a:focus {
+  color: #fff;
+  border: none;
+}
+
+#slider .carousel-inner div {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#slider .carousel-inner img {
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  #slider .carousel-inner div {
+    height: 500px;
+  }
+}
+
+@media (min-width:768px) {
+  #slider .carousel-inner img {
+    display: none;
+  }
+}
+
+.project-box {
+  background-color: #111;
+  font-weight: 1;
+}
+
+.media-img-box img {
+  width: 50px;
+  height: 50px;
+}
+
+.media-img-box i {
+  width: 41px;
+  height: 41px;
+  text-align: center;
+}
+
+.project-box .media-hover a {
+  color: #fff;
+  display: inline-block;
+  width: 313px;
+  height: 51px;
+}
+
+.project-box .media-hover a:hover {
+  color: red;
+}
+
+.project-box .container {
+  padding: 20px 10px;
+}
+
+.project-box .project-margin-bottom {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.project-box .project-margin-bottom .media-img-box i {
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition-timing-function: ease;
+  transition: all 1.2s;
+}
+
+.project-box .project-margin-bottom:hover .media-img-box i {
+  transform: rotate(360deg);
+  color: #f9271c;
+}
+
+.icon-project-font1::before {
+  content: "\270f";
+  font-size: 30px;
+}
+
+.icon-project-font2::before {
+  content: "\e009";
+  font-size: 28px;
+}
+
+.icon-project-font3::before {
+  content: "\e135";
+  font-size: 30px;
+}
+
+.icon-project-font4::before {
+  content: "\2601";
+  font-size: 30px;
+}
+
+.icon-project-font5::before {
+  content: "\e171";
+  font-size: 30px;
+}
+
+.icon-project-font6::before {
+  content: "\e137";
+  font-size: 30px;
+}
+
+.tab-box {
+  background-color: #111;
+  color: #fff;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+
+.tab-box .nav-tabs {
+  padding: 0 15px;
+  border-color: #191918;
+}
+
+.tab-box .nav-tabs li {
+  height: 42px;
+  margin-left: 20px;
+}
+
+.tab-box .nav-tabs li a {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  text-align: center;
+  padding: 9px 15px;
+  font-weight: bold;
+}
+
+.tab-box .nav-tabs li a:hover {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 3px solid red;
+  color: red;
+  font-weight: bold;
+}
+
+.tab-box .nav-tabs li a:focus {
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-weight: bold;
+}
+
+.tab-box .nav-tabs li.active a {
+  border: none;
+  border-bottom: 3px solid red;
+  background-color: transparent;
+  color: red;
+  font-weight: bold;
+}
+
+.tab-box .tab-pane {
+  padding: 30px 0;
+}
+
+#tab_content .panel-default {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+#tab_content .panel-default .panel-heading {
+  background-color: #fff;
+  border: 0;
+  float: right;
+  width: 100px;
+  height: 110px;
+  border-left: 1.2px dashed #ccc;
+  padding: 10px;
+}
+
+#tab_content .panel-default .panel-body {
+  color: #ccc;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+#tab_content .panel-default .panel-body p {
+  margin: 0;
+}
+
+#tab_content .panel-default .panel-body::before, #tab_content .panel-default .panel-heading::before {
+  content: ' ';
+  background-color: #111;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#tab_content .panel-default .panel-body::before {
+  top: 116px;
+  right: 107px;
+}
+
+#tab_content .panel-default .panel-heading::before {
+  right: 107px;
+  top: -10px;
+}
+
+.bold {
+  font-size: 20px;
+  line-height: 90px;
+}
+
+.news-box {
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.active-header {
+  margin-top: 20px;
+}
+
+.active-header .news-list-item {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  padding: 0;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.news-title div {
+  width: 110px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.news-title div::before {
+  content: ' ';
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+  left: 125px;
+}
+
+.active-header .list-group-item:hover, .active-header .list-group-item:focus {
+  background-color: red;
+  color: #fff;
+}
+
+.news-content {
+  margin-top: 20px;
+}
+
+.news-content .news-list-item {
+  display: none;
+}
+
+.news-content .active {
+  display: block;
+}
+
+.news-content .news-list-item ul {
+  list-style: none;
+}
+
+.news-content .news-list-item ul li {
+  height: 40px;
+}
+
+.news-content .news-list-item ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  color: #fff;
+}
+
+.icon-1::before {
+  content: '\e018';
+  font-size: 19px;
+}
+
+.icon-2::before {
+  content: "\e046";
+  font-size: 19px;
+}
+
+.icon-3::before {
+  content: "\e123";
+  font-size: 19px;
+}
+
+.icon-4::before {
+  content: "\e010";
+  font-size: 19px;
+}

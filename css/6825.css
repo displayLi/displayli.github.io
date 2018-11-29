@@ -1,0 +1,730 @@
+﻿@charset "utf-8";
+.lowB #header { background: #FFF; }
+#indexPage a.more { height: 50px; font-size: 14px; line-height: 50px; font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑"; color: #8a8a8a; border-color: transparent; border-radius: 0px; background-color: transparent; text-align: center; text-indent: 0px; }
+#indexPage a.more i { font-size: 18px; }
+#indexPage a.more:hover { background-color: #212121; border-color: rgb(51, 51, 51); color: #fff; text-align: center; text-indent: 0px; }
+#indexPage #mpartner .slider_control a:hover { background-color: #424242 }
+#pages a { background: #333333; color: #838383; }
+#pages a.active,  #pages a:hover { background: #fe7600; color: #fff; }
+#newslist .newstitem:hover { background: transparent; }
+.bx-wrapper .bx-controls-direction a:hover { background-color: #06080a; }
+#header ul li.navitem a { color: #C2C2C2; padding: 30px 30px; }
+#header ul li.navitem { padding: 0px .5px 10px; }
+#header.mini ul li.navitem a { padding: 20px 30px; }
+#header ul li .navitem a.active,  #header ul li .navitem:hover a { padding: 30px 30px; color: #fe7600; background: transparent none repeat scroll 0% 0%; }
+#header.mini ul li.navitem a.active,  #header.mini ul li.navitem:hover a { padding: 20px 30px; }
+#header.mini ul li.navitem ul.subnav { transform: translate3d(0px, 10px, 0px); -webkit-transform: translate3d(0px, 10px, 0px); }
+#header.mini ul li.navitem:hover ul.subnav { transform: translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0px, 0px, 0px); }
+#header.mini ul li.navitem ul.subnav li a { padding: 14px 30px; background-color: rgb(39, 39, 39); }
+#header ul li.navitem ul.subnav li a { border-bottom: medium none transparent; padding: 14px 30px; width: 150px; height: 20px; line-height: 20px; background: rgb(47, 47, 47)none repeat scroll 0% 0%; display: block; font-size: 12px; transition: all 0.2s ease-out 0s; color: #999; }
+#header ul li.navitem ul.subnav li a:hover { text-indent: 10px; background: #2f2f2f; color: #fdfdfd; }
+#header ul li.navitem ul.subnav li a::after { opacity: 0; }
+#header ul li.navitem ul.subnav { border-top: 0px solid #7B7B7B; border-radius: 0px; box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.16); }
+#header ul li.navitem ul.subnav li { border-bottom: 1px solid #383838; }
+#indexPage #mslider .bx-wrapper .bx-controls-direction a { width: 70px; height: 70px; line-height: 70px; border-radius: 0px; top: inherit; bottom: 0px; text-align: center; }
+#indexPage #mslider .bx-wrapper .bx-controls-direction a::after { content: ""; display: block; position: absolute; width: 1920px; height: 1px; position: absolute; left: -1850px; top: 0; background-color: rgba(136, 136, 136, 0.11); }
+.content .header p.subtitle { color: #828282; font-size: 14px; width: 60%; margin: 0 auto; margin-top: 20px; }
+#indexPage #mproject { background-color: #212121; background-size: inherit; }
+#category a { padding: 8px 20px; margin-right: 10px; transition: all 0.3s ease-out 0s; color: #999; border: 1px solid transparent; }
+#category a.active,  #category a:hover { color: #fff; border: 1px solid transparent; background-color: #fe7600; }
+#indexPage #mproject .bgmask,  #indexPage #mnews .bgmask,  #indexPage #mservice .bgmask,  #indexPage #mpage .bgmask { background-color: rgba(255, 255, 255, 0); }
+.bx-wrapper .bx-controls-direction a i { color: rgba(255, 255, 255, 0.38); }
+.bx-wrapper .bx-controls-direction a:hover i { color: #fff; }
+/* .bx-wrapper .bx-controls-direction a.bx-next i{margin-left:6px;margin-top:18px;} */
+
+
+
+.bx-wrapper .bx-next { right: 0; }
+#indexPage #mproject .content .wrapper .bx-controls-direction a i { margin-top: 4px; margin-left: 14px; color: rgba(255, 255, 255, 0.38); }
+#indexPage #mproject .content .wrapper .bx-controls-direction a.bx-next i { margin-left: 17px; margin-top: 4px; }
+#indexPage #mslider ul li { background-size: inherit; }
+#indexPage #mslider ul li p.title { font-size: 68px; }
+#header ul li.navitem a.active,  #header ul li.navitem:hover a { color: #fe7600; }
+/*首页服务背景层 */
+
+
+
+#contactform p textarea.inputtxt { height: 80px; }
+#contactform p .inputtxt { border: none; margin-bottom: 5px; background: none; color: #fff; }
+#contactform p { border-bottom: 1px solid rgba(221, 221, 221, 0.16); padding-top: 5px; }
+#indexPage #mteam .description { color: #848484; }
+.content .header p.title { font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑"; color: #d2d2d2; }
+#footer { background-color: #212121; border-top: 1px solid rgba(241, 241, 241, 0.04); }
+#indexPage #mteam .slider_control a i:hover { color: #f0f0f0; }
+.teamitem a div.wrap span { background: #f0f0f0; }
+#contactinfo div a { background: #484848; }
+#contactinfo div a:hover { background-color: #fe7600; }
+#footer p { text-align: center; }
+.teamitem a div.wrap { background: #fe7600; }
+/*首页幻灯高度*/
+
+
+
+#indexPage #mslider { height: 700px; }
+.bx-wrapper .bx-pager.bx-default-pager a { width: 20px; height: 4px; margin: 0px 5px; border-radius: 6px; border: 1px solid #C8C8C8; }
+/*首页全屏*/
+
+
+
+#header .content { padding-left: 40px; padding-right: 40px; }
+#shares a { background: transparent; }
+#shares a#gotop { margin-top: 1px; background-color: rgba(0, 0, 0, 0.2); transition: all 0.3s ease-out 0s; }
+#shares a#gotop:hover { background-color: rgba(0, 0, 0, 0.8); }
+#shares a#sweibo { background-color: #717171; transition: all 0.3s ease-out 0s; }
+#shares a#sshare { color: transparent; }
+#shares a#sweibo:hover { background: #fe7600; }
+#shares a.sweixin { background-color: #4E4E4E; transition: all 0.3s ease-out 0s; }
+#shares a.sweixin:hover { background-color: #fe7600; }
+/*新导航*/
+
+
+
+#header .content { padding-left: 0px; padding-right: 0px; }
+#header ul#nav { float: right; padding: 0px 0px; transition: all 0.3s ease-out 0s; }
+#header.mini ul#nav { padding: 0px 0px 0px 20px; }
+#header.mini { padding-top: 0px; background-color: rgba(33, 33, 33, 0.8); border-bottom: 1px solid rgba(255, 255, 255, 0.04); }
+#header ul li.navitem { padding: 20px 0.5px; height: auto; }
+#header.mini ul li.navitem { padding: 10px 0.5px; }
+#header { padding-top: 0px; background-color: transparent; }
+#header #logo { padding: 20px 0 20px 40px; transition: all 0.3s ease-out 0s; margin-right: 20px; }
+#header #logo img { transform: scale(1, 1); transition: all 0.3s ease-out 0s; }
+#header.mini #logo { padding: 10px 20px 10px 20px; }
+#header.mini #logo img { transform: scale(0.8, 0.8); }
+.nobanner #header { background-color: #212121; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+/*在线咨询*/
+
+
+
+#olx_head { background: #1D1D1D; border-radius: 0px; color: #f0f0f0; }
+#online_lx { border-radius: 0px; bottom: 130px; margin-right: -10px; }
+#fixed_videoPost .fixed-container { background: #2d2d2d; border: 1px solid #3a3a3a; }
+#olx_qq li a:hover i { color: #f0f0f0; }
+#online_open { background-color: #444; bottom: 130px; margin-right: -10px; }
+#olx_qq li a:hover { padding: 18px 30px; background: #fe7600; }
+#shares { right: 0px; bottom: 80px; }
+.bx-wrapper .bx-pager.bx-default-pager a:hover,  .bx-wrapper .bx-pager.bx-default-pager a.active,  .bx-wrapper .bx-pager.bx-default-pager a:focus { border: 1px solid transparent; background-color: transparent; }
+.bx-wrapper .bx-pager.bx-default-pager a { border-radius: 10px; border: rgba(125, 125, 125, 0.3) 1px solid; width: 10px; height: 10px; }
+.bx-wrapper .bx-pager.bx-default-pager a:hover { border: 1px solid rgba(255, 255, 255, .6); background-color: rgba(225, 255, 255, 0); }
+.npagePage4 .bx-wrapper .bx-pager { background-color: rgba(23, 22, 22, .8); padding: 30px 0; bottom: 0px; }
+/*服务*/
+
+
+
+#indexPage #mservice .fw { width: auto; }
+#indexPage #mservice .slider_control { width: 0px; height: auto; }
+#indexPage #mservice .slider_wrapper { width: 100%; height: auto; background-color: #F3F3F3; }
+#indexPage #mservice .slider_wrapper .slider { width: 100%; margin-left: 1%; }
+.serviceitem a { display: block; height: 120px; margin: 50px auto 20px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+.serviceitem:hover { padding: 0; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.16); }
+.serviceitem { box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); height: 360px; margin-right: 1%; width: 32%; margin-top: 20px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; margin-bottom: 20px; background-color: #fff; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0); }
+.serviceitem div p.description { font-size: 12px; color: #7b7b7b; height: 50px; overflow: hidden; width: 70%; margin-top: 20px; padding: 0 15%; transition: all 0.2s ease-out 0s; }
+.serviceitem div p.title { width: 70%; padding: 0; color: #6C6C6C; }
+#indexPage #mservice .content .header p.title { color: transparent; font-size: 0px; }
+#indexPage #mservice .content .header p.subtitle { color: transparent; font-size: 0px; line-height: 0px; }
+#indexPage #mservice .content .header { padding-top: 0px; padding-bottom: 0px; }
+#indexPage #mservice { height: auto; }
+.serviceitem:hover .title { color: #1E1E1E; }
+.serviceitem:hover div p.description { color: #838383; }
+#indexPage #mservice a.more { vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; position: relative; -webkit-transition-property: color; transition-property: color; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; margin-bottom: 0; }
+#indexPage #mservice a.more::before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: #fe7600; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 0 50%; transform-origin: 0 50%; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; }
+#indexPage #mservice a:hover.more::before { -webkit-transform: scaleX(1); transform: scaleX(1); -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); -webkit-transform: scaleX(1); transform: scaleX(1); -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+#indexPage #mpage .slider_wrapper li .fimg { width: 50%; height: 600px; background-size: cover; }
+#mpage .content .header { width: 50%; padding-top: 180px; padding-bottom: 40px; padding-left: 80px; }
+#mpage .module-slider .description { max-height: 108px; height: auto; line-height: 26px; padding-right: 10.1%; padding-left: 10.1%; float: right; width: 30%; }
+#indexPage #mpage a.more { color: #666; border-color: rgba(158, 158, 158, 0.26); width: 10%; border-radius: 0px; background-color: transparent; text-align: center; text-indent: 0px; margin: 0; margin-left: 20px; margin-top: 50px; margin-left: 80px; height: 46px; line-height: 46px; }
+#indexPage #mpage a.more:hover { background-color: #fe7600; border-color: #fe7600; color: #fff; }
+#indexPage #mpage .slider_wrapper li { background-color: #f3f3f3; }
+#indexPage .module.bgShow { background-size: inherit;/*background-position:center !important; background-attachment:initial;*/
+
+}
+#indexPage #mpage .content .header p.subtitle { display: block; text-align: left; margin: 0; }
+#indexPage #mpage .content .header p.title { text-align: left; color: #d2d2d2 }
+#indexPage #mpage .content .header p.title::after { content: ""; display: block; width: 20px; height: 4px; background-color: #fe7600; position: relative; top: 70px; left: -80px; width: 20px; }
+/*首页新闻*/
+
+
+
+#mnews .content .header { padding-top: 120px; padding-bottom: 80px; }
+#indexPage #mnews { background-color: #151515; }
+#newslist .newsinfo { display: block; float: none; margin: 0; padding: 0 60px; position: relative; transform: translate3d(0px, -14px, 10px); -webkit-transform: translate3d(0px, -14px, 10px); -moz-transform: translate3d(0px, -14px, 10px); }
+#newslist .newstitem:hover .newsinfo { transform: translate3d(0px, -14px, 10px); -webkit-transform: translate3d(0px, -14px, 10px); -moz-transform: translate3d(0px, -14px, 10px); }
+#newslist .newsbody .title { width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 16px; line-height: 24px; color: #cacaca; transition: all 0.3s ease 0s; }
+#newslist .newsbody .description { width: 100%; margin-top: 20px; font-size: 12px; color: #777; text-align: left; }
+#newslist .newsbody .date { color: #7E7E7E; }
+#newslist .newsbody .date .md { margin-right: 10px; }
+#newslist .newstitem:hover .description { color: #d4d4d4; }
+#newslist .newsdate { width: auto; margin: 0 0 20px; background-color: transparent; transition: all 0.3s ease-out 0s; }
+#newslist .newstitem:hover .newsdate { background-color: transparent; }
+#newslist .newscontent { height: auto; margin: 0; padding: 0; width: 100%; }
+.newsdate p { float: inherit; padding: 0; width: auto; }
+#newslist .newsinfo .year { font-size: 16px; border-left: 20px solid #B9B9B9; line-height: 0px; height: 1px; padding: 0 0 0 15px; }
+#newslist .newstitem i { text-indent: -100px; color: transparent; font-size: 36px; margin-top: -200px; }
+#newslist .newstitem:hover i { text-indent: -80px; margin-top: -200px; }
+#newslist .newsbody { margin-left: 0; width: 86%; padding: 0 30px; }
+#newslist { width: 1180px; margin: 0px auto; }
+#newslist,  #newslist .wrapper,  #indexPage #mnews .content_list { max-width: 100%; }
+/*服务内页*/
+
+
+
+#sitecontent { background-color: #212121; }
+#servicelist .serviceitem div { margin-top: 6px; width: 56%; margin: 0 auto; }
+#servicelist .serviceitem { height: 320px; margin-right: 1%; width: 32%; margin-top: 20px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; background-color: #212121; margin-bottom: 0px; }
+#sitecontent #servicelist .serviceitem:hover { z-index: 2; background-color: #2b2b2b; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); padding: 10px 0; position: relative; margin-top: 20px; border: 1px solid rgba(62, 62, 62, 0.25); }
+#servicelist .serviceitem:hover .title { color: #fe7600; padding-top: 4px; }
+#servicelist .serviceitem div p.description { color: #7B7B7B; text-align: center; }
+#servicelist .serviceitem div p.title { color: #d2d2d2; width: 100%; text-align: center; height: 32px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; }
+#servicelist .serviceitem div p.title::after { content: ""; display: block; width: 40px; height: 1px; margin: 0 auto; background-color: rgba(134, 134, 134, 0.2); position: relative; transition: all 0.3s ease 0s; top: 7px; }
+#servicelist .serviceitem:hover div p.title::after { width: 20px; }
+#servicelist { width: 100%; }
+#servicelist .wrap { width: 100%; margin-left: 1%; }
+/*#sitecontent #servicelist .serviceitem::after{content:"";display: block;background-color:#ff7500;width:0%; height:1px;position: absolute;top: 0px;opacity: 0;transition: all 0.3s ease 0s; }*/
+
+
+
+#sitecontent #servicelist .serviceitem:hover::after { width: 100%; opacity: 1; }
+#sitecontent .npagePage #servicelist .serviceitem:hover { padding: 0; }
+/*项目详情*/
+
+
+
+#projectinfo { width: 340px; float: right; padding: 0px 50px; margin-left: 0px; }
+#projectwrap.fw { width: 100%; }
+#projectimages li img { display: block; float: none; margin: 0px auto; max-width: 100%; }
+#projectbody { max-width: 100%; margin: 0px auto; width: calc(100% - 490px); float: left; padding: 0 0 0 50px; }
+#projectimages li img { display: block; float: none; max-width: 100%; margin: 0px auto; }
+#projectimages { padding: 50px; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); }
+#projectinfo .description a { background: #2D2D2D; }
+#projectinfo .description a:hover { background: #2D2D2D; color: #f0f0f0; }
+.teamitem .teaminfo { text-align: left; }
+.ellipsis { text-overflow: ellipsis; overflow: visible; white-space: normal; }
+/*案例*/
+
+
+
+#projectmore { color: #f0f0f0; height: 100px; line-height: 100px; background: #262626; font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑"; font-size: 18px; }
+#projectmore:hover { color: #f0f0f0; height: 100px; line-height: 100px; background: #262626; font-size: 18px; }
+#indexPage #mproject .bx-wrapper .bx-controls-direction { display: block; }
+#indexPage #mproject .bx-wrapper .bx-pager { display: none; }
+/*瀑布流*/
+
+
+
+.wrapper { margin: 0px auto; }
+#projectlist .projectitem { float: none; -webkit-backface-visibility: hidden; -webkit-transform-style: preserve-3d; padding: 0em; margin-right: 20px; background-color: transparent; }
+#projectlist .projectitem a img { width: 100%; height: auto; float: none; display: block; background-color: #151515; }
+#projectlist .projectitem .project_info { top: auto; height: 1px; }
+/*首页案例线*/
+
+
+
+#projectlist .projectitem .project_info div.line1 { margin: 10px 0 0 20px; width: 3px; height: 1px; background: #a5a5a5; top: 0; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#projectlist .projectitem a:hover .project_info div.line1 { width: 30px; }
+#projectlist .projectitem a:hover .project_info { background: transparent; }
+#projectlist .projectitem .project_info div { top: 0; margin: 0 auto; }
+#projectlist .projectitem .project_info p.title { color: #7B7B7B; text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-top: -70px }
+#projectlist .projectitem .project_info p.subtitle { margin-top: 0; color: #BABABA; text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#projectlist .projectitem a:hover img { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); }
+#projectlist .projectitem a:hover .project_info p.title { margin-top: 0px; color: #fe7600; }
+#projectib .projectitem a:hover .project_info p.title { margin-top: -42px; }
+/*案例详情页标签图瀑布流*/
+
+
+
+#projectib .projectitem a .project_info { height: 40px; }
+#projectib .projectitem { width: 150px; padding: 0em; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; margin-right: 20px; margin-bottom: 10px; bottom: 0; }
+#projectib .projectitem a img { width: 100%; height: auto; float: none; margin-bottom: 50px; display: block; }
+#projectib .projectitem a .project_info p.title { margin-top: -42px; }
+/*首页团队*/
+
+
+
+#indexPage #mteam { background-color: #303030; height: 500px; }
+#mteam .content .header { padding-top: 130px; padding-bottom: 20px; }
+#indexPage #mteam .header img { float: left; margin: 0px 80px 80px 40px; }
+#indexPage #mteam .header p.title { text-align: left; margin: 30px auto auto; }
+#indexPage #mteam .header p.subtitle { text-align: left; margin: 0px auto; }
+#indexPage #mteam .description { text-align: left; width: 760px; }
+#indexPage #mteam .slider_control { height: 60px; width: 60px; margin-top: 220px; }
+#indexPage #mteam .bx-pager { display: block; bottom: -50px; margin: 0 auto; }
+/*首页联系*/
+
+
+
+
+
+/*#contactform p .inputtxt { width: 0; height: 0; line-height: 0; padding: 0; color: transparent; background-color: transparent; margin-bottom: 0; }*/
+
+
+
+
+
+/*#contactform p .inputsub { width: 0; }*/
+
+
+
+#contactinfo { width: 48%; }
+#contactinfo h3 { float: left; width: 100%; color: #8e8e8e; margin-bottom: 32px; }
+#contactinfo p { float: inherit; padding-right: 40px; height: 32px; line-height: 32px; }
+#indexPage #mcontact .content { width: 100%; max-width:1920px}
+#contactinfo div { clear: both; margin-top: 120px; }
+#indexPage #mcontact { height: 460px; background-color: #212121; border-top: 1px solid #292929; }
+#mcontact .content .header { padding-top: 30px; }
+#indexPage #mproject .content { margin: 0 }
+#indexPage .module .content { position: relative; margin: 0; top: 0; }
+#indexPage #projectlist .projectitem,  #projectlist .projectitem { padding: 0; padding-bottom: 20px; float: left; overflow: hidden; margin: 0; }
+#projectlist { margin: 0 auto }
+#projectlist .projectitem a .project_info p { padding: 0 }
+#mcontact .content #contactinfo { width: 45%; }
+#contactform p .inputtxt { width: 480px; height: 24px; line-height: 24px; }
+#contactform p .inputsub { background-color: #444444; padding: 12px 0; }
+#contactform p .inputsub:hover { background-color: #fe7600; }
+#contactinfo div a { width: 36px; height: 36px; border-radius: 26px; }
+#contactinfo div a i { margin-top: 9px; }
+/*转开始*/
+
+
+
+.content .header { padding-bottom: 40px; }
+#indexPage #mservice .content { height: auto; margin-top: 0; padding-bottom: 50px; background-color: #212121; }
+#indexPage #mpage .content { height: 640px; margin-top: 0; }
+#indexPage #mteam .content { height: auto; margin-top: 0; padding: 100px 0px; }
+#indexPage #mproject .content { height: auto; margin-top: 0; width: 96%; margin: 0 auto; }
+#indexPage #mnews .content { height: auto; margin-top: 0; }
+#indexPage #mpartner .content { height: auto; margin-top: 0; }
+#indexPage #mcontact .content { height: auto; margin-top: 0; }
+#indexPage a.more i { font-size: 18px; display: none }
+/*案例*/
+
+
+
+#indexPage #mproject .content .header { padding-top: 80px; width: 100%; display: inline-block; }
+#mproject #category { display: block; }
+#indexPage #mproject #projectlist { max-width:1920px; margin: 0 auto; width: 100%; padding-bottom: 100px; }
+#projectlist .projectitem a .project_info { top: 0; height: auto; position: inherit; }
+#projectlist .projectitem a .project_info p.title { color: #7B7B7B; margin-top: 0px; text-align: center; }
+#projectlist .projectitem a .project_info p.subtitle { color: #BABABA; margin-top: 0px; text-align: center; opacity: 0; transform: rotateX(90deg); -webkit-transform: rotateX(90deg); transition: all 0.3s ease 0s; }
+#projectlist .projectitem a:hover .project_info p.subtitle { transform: rotateX(0deg); -webkit-transform: rotateX(0deg); opacity: 1; }
+/* #projectlist .projectitem a .project_info div:after { content: ''; display: block; margin: 10px 0 0 0; width:2px; height:2px; background:rgba(105, 105, 105, 0.23); top:20px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;margin: 0 auto; margin-top:-6px;}
+
+#projectlist .projectitem a:hover .project_info div:after{height:1px;margin-top10px;} */
+
+
+
+#indexPage #mproject .content .wrapper .content_list { margin: 0 auto; margin-top: 0px; }
+#projectlist .projectitem:hover a .project_info div:after { width: 100%; margin-top: 20px; }
+#indexPage #mproject a.more { width: 20%; height: 50px; line-height: 50px; font-size: 14px; margin-bottom: 0px; margin-top: 120px; bottom: 100px; border: 1px solid #474747; background-color: rgba(71, 71, 71, 0.24); color: #e9e9e9; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; position: relative; -webkit-transition-property: color; transition-property: color; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; }
+#indexPage #mproject a.more:hover { background-color: rgba(42, 42, 42, 0.28); border: 1px solid #fe7600; }
+#indexPage #mproject .content .header p.title { text-align: center; color: #fff; }
+#indexPage #mproject .content .header p.subtitle { text-align: center; width: 47%; margin: 0 auto; color: #828282; }
+#indexPage #mproject #category { padding-top: 20px; height: 30px; padding-bottom: 60px; }
+#projectlist .projectitem a .project_img { overflow: hidden; }
+#projectlist .projectitem a .project_info div:before { content: ''; display: block; margin: 10px 0 0 0; width: 1px; height: 10px; background: #3a3a3a; top: 20px; margin: 0 auto; margin-top: 10px; transition: all 0.3s ease 0s; }
+#indexPage #mproject .content .wrapper .content_list { margin: 0 auto; margin-top: 0px; }
+#projectlist .projectitem a .project_info div:before { transition: all 0.3s ease 0s; }
+#projectlist .projectitem:hover a .project_info div:before { height: 0px; }
+#indexPage #mproject a.more::before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: #fe7600; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 0 50%; transform-origin: 0 50%; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; }
+#indexPage #mproject a:hover.more::before { -webkit-transform: scaleX(1); transform: scaleX(1); -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); -webkit-transform: scaleX(1); transform: scaleX(1); -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+#projectlist .projectitem a .project_img::after { content: ""; display: block; width: 100%; height: 0; background-color: #fe7600; opacity: 0; z-index: 9999; position: relative; bottom: 0; transition: all 0.3s ease 0s; }
+#projectlist .projectitem a:hover .project_img::after { opacity: 1; height: 6px; }
+/*首页团队*/
+
+
+
+#indexPage #mteam .content>.header { display: none; }
+#indexPage #mteam .header img { float: left; margin: 0px 0% 0 21%; border-radius: 0px; width: 180px; height: auto; }
+#indexPage #mteam .header p.title { text-align: left; color: #5a5a5a; text-align: center; }
+#indexPage #mteam .header p.subtitle { text-align: left; text-align: center; }
+#indexPage #mteam { background-color: #2b2b2b; height: auto; min-height: 380px; }
+#mteam .content .header { padding-bottom: 30px; }
+#contactinfo div { clear: both; margin-top: 90px; }
+#contactinfo div a { color: #fff; background: rgba(0, 0, 0, .3); margin-right: 20px; margin-top: 30px; }
+#indexPage #mteam .module-content .header a { position: relative; }
+#mteam .content .header { padding-top: 80px; }
+#indexPage #mteam .summary { float: left; width: 40%; margin-top: 20px; transition: all 0.3s ease 0s; margin-left: 5%; }
+#indexPage #mteam .summary:hover { margin-left: 6%; }
+#indexPage #mteam .summary p { text-align: left; color: #848484; }
+#indexPage #mteam .bx-wrapper .bx-prev { left: 1%; margin-top: -20px; }
+#indexPage #mteam .bx-wrapper .bx-next { right: 1%; margin-top: -20px; }
+#indexPage #mteam .module-content .header { padding-top: 0px; }
+#indexPage #mteam .summary p.title a { color: #d2d2d2; }
+#indexPage #mteam .summary p.subtitle { color: #6b6b6b; }
+#indexPage #mteam .summary .description { width: 100%; font-size: 12px; color: #bebebe; font-size: 13px; height: auto; line-height: 24px; margin-left: 0; }
+#mteam .bx-wrapper .bx-controls-direction a:hover i { color: #fff; }
+#indexPage #mteam .content .fw { width: 100%; }
+#teamitem { height: 180px; margin-bottom: 20px; }
+#teamitem_1 { height: 180px; margin-bottom: 20px; }
+/*#indexPage #mteam .summary .description::after{content: "";display: block;width: 100%;height: 1px;background-color: rgba(255, 255, 255, 0.11);margin-top: 36px;}*/
+
+
+
+#indexPage #mteam .bx-wrapper .bx-controls-direction a.bx-next i { margin-top: 3px; margin-left: 15px; }
+#indexPage #mteam .bx-wrapper .bx-controls-direction a.bx-prev i { margin-top: 3px; margin-left: 13px; }
+#indexPage #mteam .bx-wrapper .bx-controls-direction a i { color: rgb(146, 146, 146); }
+#indexPage #mteam .bx-wrapper .bx-controls-direction a:hover i { color: #fe7600; }
+#indexPage #mteam .bx-wrapper .bx-controls-direction a { background: transparent; }
+#indexPage #mteam .bx-wrapper .teamitem:hover .summary { margin-left: 20px; }
+#indexPage #mpage .wrapper li .fimg { width: 50%; height: 640px; float: right; margin-top: -425px }
+#mpage .module-content .description { max-height: 108px; height: auto; line-height: 26px; text-align: left; width: 32%; margin: 0; padding-left: 80px; }
+#indexPage #mpage { background-color: #151515; }
+/*#indexPage #mservice { background-color: #F3F3F3; }*/
+
+
+
+#indexPage #servicelist .serviceitem { margin-top: 20px; }
+#servicelist .serviceitem a { margin: 0 }
+#servicelist .serviceitem a img { padding-top: 10px; width: 140px; padding-bottom: 10px; padding-top: 10px; transition-duration: 0.3s; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; transition: all 0.3s ease 0s; margin-top: 30px; }
+#servicelist .serviceitem:hover a img { -webkit-transform: scale(1.5) rotate(12deg); transform: scale(1.2) rotate(0deg); padding-top: 20px; margin-top: 20px; }
+#servicelist .serviceitem div p.description { width: auto; padding: 0; }
+#indexPage #mservice .wrapper .bx-viewport { padding-bottom: 40px; margin-top: 0px; }
+#indexPage #mservice .wrapper { background-color: #212121; }
+#indexPage #mservice { background-color: #212121; }
+/*新闻*/
+
+
+
+#mnews .content .header { padding-top: 80px; padding-bottom: 40px; }
+#indexPage #mnews .content .header { display: block; width: 96%; margin: 0 auto; }
+#indexPage #mnews .content .header p.title { color: #d2d2d2; text-align: left; }
+#newslist .newstitem .news_wrapper { position: absolute; padding-top: 16px; top: 60px; height: 90px; }
+#newslist .newstitem:hover .news_wrapper { top: 40px; }
+#newslist .newstitem.left a.newscontent,  #newslist .newstitem.right a.newscontent { width: 100%; padding-left: 0; }
+#newslist .newstitem.left a.newscontent:hover,  #newslist .newstitem.right a.newscontent:hover { padding-left: 0; }
+#newslist .newstitem.right a.newscontent { padding-right: 0 }
+#newslist .newstitem.right a.newscontent:hover { padding-right: 0 }
+#newslist .newstitem a.newscontent:hover .news_wrapper,  #newslist .news_wrapper { width: 100%; }
+#newslist .separator { display: none; }
+#newslist .newstitem { border-bottom: 1px solid transparent; float: left; height: auto; margin-bottom: 40px; }
+#newslist .news_wrapper { background: transparent }
+#newslist .newsbody p.date { font-family: "HELVETICANEUELTPRO-THEX", Arial; height: 30px; font-weight: 300; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; display: block; }
+#newslist .newstitem:hover .newsbody p.date { margin-left: 0px; }
+#newslist .newstitem a.newscontent { text-align: left; }
+#newslist .newstitem .md span { display: none; }
+#newslist .newstitem .md::after { content: ''; display: block; border-bottom: 1px solid rgb(200, 200, 200, 0); width: 0px; height: 0px; position: absolute; left: 0; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; top: 68px; }
+#newslist .newstitem:hover .md::after { width: 12px; height: 48px; border-bottom: 1px solid #fe7600; top: 18px; }
+#indexPage #newslist .newstitem .newsimg { width: 100%; height: 240px; background-color: #151515; position: absolute; top: 0; opacity: 0; transition: all 0.3s ease 0s; }
+#indexPage #newslist .newstitem:hover .newsimg { opacity: 1 }
+#newslist .newstitem:hover .newsimg::after { content: ""; display: block; width: 100%; height: 100%; background-color: rgba(21, 21, 21, 0.79); position: relative; left: 0; top: 0; }
+#newslist .bx-viewport { min-height: auto; }
+#newslist .newstitem.right a.newscontent .newsimg { left: 0; height: 240px; }
+#indexPage #mnews .newstitem a.details { display: block; position: absolute; z-index: 20; top: -3px; background: none; width: 100px; height: 20px; margin: 0px; border-radius: 0px; line-height: 21px; text-indent: -94px; overflow: hidden; border: none; right: 90px; }
+#newslist .newstitem:hover p.title { color: #fe7600; text-decoration: underline; }
+#indexPage #mnews a.more { display: block; width: 18%; height: 50px; line-height: 50px; font-size: 14px; margin: 20px auto 140px; border: 1px solid rgba(71, 71, 71, 0.22); background-color: rgba(71, 71, 71, 0.15); color: #a8a8a8; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; position: relative; -webkit-transition-property: color; transition-property: color; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; }
+#indexPage #mnews a.more:hover { background-color: #202020; border: 1px solid #202020; color: #fff; }
+#indexPage #mnews .content .header p.subtitle { color: #6b6b6b; text-align: left; width: 100%; margin-top: 10px; }
+#indexPage #mnews a.more::before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: #fe7600; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 0 50%; transform-origin: 0 50%; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; }
+#indexPage #mnews a:hover.more::before { -webkit-transform: scaleX(1); transform: scaleX(1); -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); -webkit-transform: scaleX(1); transform: scaleX(1); -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+#indexPage #mpartner .content .header { display: none; }
+#indexPage #mpartner .module-content { padding: 70px 0; height: 80px; width: 100%; }
+#indexPage #mpartner .wrapper ul li a img { height: auto; width: auto; }
+#mpartner .bx-wrapper .bx-controls-direction a { background: rgba(0, 0, 0, 0.2); border-radius: 25px; }
+#mpartner .bx-wrapper .bx-controls-direction a i { color: #fff; margin-top: 4px; margin-left: 13px; }
+#mpartner .bx-wrapper .bx-controls-direction a:hover { background-color: #fe7600; }
+#indexPage #mpartner .bx-wrapper .bx-pager { display: none; }
+#indexPage #mpartner .bx-wrapper .bx-controls-direction { display: block; }
+#indexPage #mpartner .bx-wrapper .bx-controls-direction a.disabled { display: block; }
+#indexPage #mpartner .bx-wrapper .bx-prev { left: -58px; }
+#indexPage #mpartner .bx-wrapper .bx-next { right: -58px; }
+/*联系*/
+
+
+
+#indexPage #mcontact .content { margin: 0 auto; }
+#indexPage #mcontact .content .header { visibility: hidden; }
+#indexPage #mcontact .content .fw { width: 88%; }
+/*版权Logo*/
+
+
+
+#footer a path { fill: rgb(148, 148, 148); }
+/*内页服务*/
+
+
+
+#servicelist .serviceitem { text-align: center; border: 1px solid rgba(62, 62, 62, 0); height: 280px; border-right: 1px solid transparent; }
+#servicelist .serviceitem a img { display: inline-block; }
+/*案例内页*/
+
+
+
+#mproject.npagePage #category { margin-top: 30px; }
+.npagePage #projectlist .content_list { max-width: 100%; margin: 0 auto; width: 1200px; }
+.npagePage #projectlist .projectitem { margin: 0px; }
+.npagePage #mproject #projectlist { max-width: 1200px; margin: 0 auto; width: 80%; padding-bottom: 100px; }
+/*团队内页*/
+
+
+
+.Pageteam .teamitem .title a { color: #d2d2d2; }
+#teambody .theader .title { color: #d2d2d2; }
+/*新闻内页*/
+
+
+
+.Pagenews #newslist .newstitem:hover p.title { text-decoration: none; }
+.projectSubList,  .projectSubList .content_list { width: 100%; }
+#projectlist .projectitem { width: 380px }
+#indexPage .module { z-index: auto; background-size: inherit; }
+#category a::after { content: ''; position: absolute; width: 2px; height: 2px; margin-left: 26px; margin-top: 7px; background: rgba(255, 255, 255, 0.2); }
+#category a:last-child::after { width: 0px; }
+.Pageanli #category li a::after { content: ''; position: absolute; width: 2px; height: 2px; margin-left: 26px; margin-top: 7px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+.Pageanli #category li:last-child a::after { width: 0px; }
+#projectlist .projectitem:hover a::before { border: 1px solid #E4E4E4; }
+#projectlist .wrapper { margin-left: 0; }
+.npagePage #newslist .newsbody { margin-left: 500px; width: 48%; }
+.npagePage #newslist .newstitem .newsimg { width: 480px; }
+.npagePage #newslist .newstitem .news_wrapper { top: 50px; transition: all 0.3s ease 0s; }
+.npagePage #newslist .newstitem:hover .news_wrapper { top: 26px; }
+.npagePage #newslist .news_wrapper .newsbody p.date { position: absolute; top: 40px; top: 160px; opacity: 0; }
+.npagePage #newslist .news_wrapper:hover .newsbody p.date { opacity: 1; }
+.npagePage #newslist .newstitem .md::after { width: 0px; height: 1px; top: -28px; border-bottom: 1px solid rgba(200, 200, 200, 0.11); opacity: 0; }
+.npagePage #newslist .newstitem:hover .md::after { width: 570px; opacity: 1; }
+.npagePage #newslist .newstitem .news_wrapper { height: 180px; }
+.npagePage #newslist .newstitem:hover .newsimg::after { opacity: 0; }
+.npagePage .content .header p.subtitle { margin-top: 10px; }
+.npagePage .content .header { padding-bottom: 80px; }
+.npagePage #newslist .newstitem.left a.newscontent,  .npagePage #newslist .newstitem.right a.newscontent { background-color: #2b2b2b; }
+#mslider .bx-wrapper .bx-pager.bx-default-pager a.active,  #mslider .bx-wrapper .bx-pager.bx-default-pager a:focus { background-color: #2A2A2A; border: 1px solid #2A2A2A; }
+#mslider .bx-wrapper .bx-pager.bx-default-pager a { border-radius: 0px; margin: 0 40px 0 0; border-radius: 10px; border: #8C8C8C 1px solid; background-color: transparent; }
+#indexPage #mslider .bx-wrapper .bx-pager-item a::before { position: absolute; content: ""; height: 1px; width: 0px; background: #fe7600; z-index: -1; top: -32px; left: -5px; border-radius: 20px; opacity: 0; transition: all 0.3s ease 0s; }
+#indexPage #mslider .bx-wrapper .bx-pager-item a.active::before { opacity: 1; width: 20px; }
+#indexPage #mslider .bx-wrapper .bx-pager { bottom: 0px; margin-left: 20px; }
+#mslider .bx-wrapper .bx-controls-direction { display: block; }
+#header ul li.navitem a::after { content: ''; position: absolute; width: 2px; height: 2px; margin-left: 30px; margin-top: 19px; background: rgba(255, 255, 255, .3); transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#header ul li.navitem:last-child a::after { width: 0px; }
+#indexPage .module .bgmask { background-color: transparent; }
+#indexPage #mcontact .header p.title,  #indexPage #mcontact .header p.subtitle { color: transparent; font-size: 0; }
+#projectib5 #projectlist .projectitem { overflow: hidden; padding-bottom: 0px; width: 45% !important }
+#projectib5 #mproject #projectlist { width: 100%; }
+.npagePage #projectib5 #projectlist .content_list { width: 100% !important; }
+#projectib5 #projectlist .projectitem a::before { width: calc(100% - 40px); height: calc(100% - 100px); }
+.npagePage4 .bx-viewport { background-color: #171616; min-height: 650px; }
+#post_slider li,  #post_slider1 li { height: 650px; background-size: auto 100% !important; }
+#post_slider { height: 650px; }
+#projectinfo4 .header { float: left; padding: 0; }
+#projectinfo4 { width: 100%; background-color: #212121; }
+#projectwrap4 { margin-top: 0px; width: 100%; }
+#projectwrap4 #projectih4 { width: 1200px; margin: 0 auto; }
+#projectinfo4 .header .title-warp { margin: 30px 0px; width: 340px; }
+#projectinfo4 .header .description { width: 1100px; background-color: #181717; padding: 40px; }
+#projectinfo4 .header p.title { color: #fff; font-size: 18px; text-align: left; max-width: 300px; }
+/*
+
+#projectinfo4 .header .description::after {content:"";position: absolute;width: 10px;height: 4px;margin-left: -40px;margin-top:0;background: rgb(255, 0, 0);padding: 0;}*/
+
+
+
+.postbody4 { width: 1200px; margin: 0 auto; margin-top: 30px; }
+#projectinfo4 .header p.subtitle { font-size: 12px; text-align: left; max-width: 300px; margin: 0; }
+#projectshow4 #projecttags4 { width: 1200px; margin: 0 auto; }
+#npagePage #projectlist .projectitem a .project_info p.title { color: #7B7B7B; text-align: center; font-size: 14px; }
+#npagePage #projectlist .projectitem a:hover .project_info p.title { color: #fe7600; }
+#npagePage #projectlist .projectitem a .project_info p.subtitle { color: #BABABA; height: auto; line-height: inherit; text-align: center; }
+/* #npagePage #projectlist .projectitem a .project_info { position: absolute; } */
+
+
+
+#npagePage #projectlist .projectitem a:hover .project_info { height: auto; }
+/* #npagePage #projectlist .projectitem a .project_info div { margin-top: -15px; } */
+
+
+
+.bx-wrapper .bx-pager.bx-default-pager a.active { border: 1px solid rgb(254, 118, 0); background-color: #fe7600; }
+.bx-controls { margin: 0 auto; }
+#indexPage #mnews .content_list:after { content: ''; display: block; clear: both; }
+#newslist .newsbody .description { height: 44px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; transition: all 0.3s ease 0s; }
+/* #indexPage #mnews .content_list::after{content: "";display:block;position: absolute;bottom: -21px;width:100%;height: 1px;background-color:rgba(237, 237, 237, 0.12);z-index: 0;} */
+
+
+
+#indexPage #newslist .newstitem .newsbody .description::before { content: ""; display: block; position: absolute; top: -40px; width: 86%; height: 6px; background-color: rgba(218, 218, 218, 0.2); z-index: 1; transition: all 0.3s ease 0s; }
+#indexPage #newslist .newstitem:hover .newsbody .description::before { background-color: rgba(218, 218, 218, 0); }
+#newslist .newstitem { height: 240px; }
+#indexPage #mnews .content_list { height: 240px; }
+#newslist .bx-viewport { overflow: visible !important; }
+/*silder  改*/
+
+
+
+#indexPage #mslider .bx-wrapper { position: absolute; }
+#indexPage #mslider .bx-wrapper .bx-pager { width: auto; left: 0px; margin-top: -80px; bottom: 20px; }
+#mslider .bx-wrapper .bx-pager.bx-default-pager a { width: 10px; height: 10px; background: rgba(148, 118, 86, 0); border: 1px solid rgba(138, 138, 138, 0.52); }
+#mslider .bx-wrapper .bx-pager.bx-default-pager a.active { border: 1px solid #fe7600; background: #fe7600; }
+#indexPage #mslider .bx-wrapper .bx-pager-item { width: 8px; height: 8px; -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); margin: 10px 10px; }
+#online_open { bottom: 176px; background: #fe7600; }
+.bx-wrapper .bx-prev { left: inherit; right: 70px; }
+#indexPage #mservice .wrapper .bx-wrapper .bx-prev { left: 10px; }
+#indexPage #mservice .wrapper .bx-wrapper .bx-next { right: 10px; }
+#indexPage #mservice .bx-wrapper .bx-controls-direction a i { margin-top: 4px; margin-left: 14px; color: #a0a0a0; }
+#indexPage #mservice .bx-wrapper .bx-controls-direction a.bx-next i { margin-left: 16px; margin-top: 4px; }
+#projectlist .projectitem a .project_info div { margin-top: 20px; transition: all 0.3s ease 0s; }
+#projectlist .projectitem:hover a .project_info div { margin-top: 16px; }
+#indexPage #mproject .content .header p.subtitle::after { display: block; content: ""; width: 20px; height: 5px; background-color: #fe7600; left: 0; position: relative; top: 20px; margin: 0 auto; }
+#indexPage #mteam { height: auto; }
+/*服务改*/
+
+
+
+#indexPage #mservice.module.bgShow { background-size: auto 540px; background-position: top center; background-size: inherit; padding-top: 540px; }
+#indexPage #mservice .bx-wrapper .bx-controls-direction a,  #indexPage #mservice .bx-wrapper .bx-controls-direction a:hover { background: rgba(0, 0, 0, 0); }
+#indexPage #mservice .bx-wrapper .bx-controls-direction a i:hover { color: #fe7600; }
+/* #indexPage #mproject #category a::before {display: block;position: absolute;top: 0px;right: 0px;height: 100%;width: 0px;z-index: -1;content:"";color: #eadfdf;background: #cc2121;-webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);}
+
+#indexPage #mproject #category a:hover::before{left:0%;right: auto;width: 100%;} */
+
+
+
+#indexPage #mproject #category a:before { display: block; position: absolute; top: 0px; right: 0px; height: 100%; width: 0px; z-index: -1; content: ""; color: #eadfdf; background: #fe7600; -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1); transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1); }
+#indexPage #mproject #category a:hover:before { left: 0%; right: auto; width: 100%; }
+#indexPage #mproject #category a { position: relative; z-index: 2; }
+#indexPage #mproject #category a.active,  #category a:hover { background-color: transparent; }
+#indexPage #mpartner { background-color: #151515; }
+/*
+
+#indexPage #mteam .summary p.title::after{content: "";display: block;width:20px;height:3px;background-color: #fe7600;transition: all 0.3s ease 0s;z-index: 9999;position: absolute;left:34%;top:32px;}
+
+#indexPage #mteam .summary:hover p.title::after{width:60px;} */
+
+
+
+.bx-wrapper .bx-loading { background-color: #151515; }
+#indexPage #mteam .summary:hover p.title a { color: #fe7600; }
+#mproject.npagePage #category a:before { display: block; position: absolute; top: 0px; right: 0px; height: 100%; width: 0px; z-index: -1; content: ""; color: #eadfdf; background: #fe7600; -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1); transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1); }
+#mproject.npagePage #category a.active:before,  #mproject.npagePage #category a:hover:before { left: 0%; right: auto; width: 100%; }
+#mproject.npagePage #category a { position: relative; z-index: 2; }
+#mproject.npagePage #category a.active,  #category a:hover { background-color: transparent; }
+.npagePage .content { background-color: #212121; padding-bottom: 100px; }
+.postbody hr { border-top: 1px dotted rgba(211, 211, 211, 0.15); }
+#indexPage #mslider .bx-wrapper .bx-controls-direction a i { margin-top: 18px; margin-left: 0px; }
+#projecttags1 a,  #projecttags2 a,  #projecttags3 a,  #projecttags4 a,  #projecttags5 a { background: #2d2d2d; }
+#projecttags4 a:hover { background-color: #fe7600; color: #fff; }
+#indexPage #mslider .bx-wrapper .bx-controls-direction a:before { display: block; position: absolute; top: 0px; right: 0px; height: 100%; width: 0px; z-index: -1; content: ""; color: #eadfdf; background: #fe7600; -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1); transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1); }
+#indexPage #mslider .bx-wrapper .bx-controls-direction a:hover:before { left: 0%; right: auto; width: 100%; }
+/***/
+
+
+
+.npagePage #projectlist { width: 96%; position: relative }
+.npagePage #projectlist .content_list { width: 100%; }
+.npagePage #projectlist .projectitem { width: auto; margin-right: 0px; padding: 0; padding-bottom: 20px; }
+#indexPage .module.mvideom.mm102548 { background-color: #212121 !important; }
+.module.mvideom.mm102548 ul.content_list { width: 96%; }
+.mvideom.mvideom01 .mvideo_header { width: 88%; padding-top: 80px; padding-bottom: 40px; }
+.mvideo_more { border: 1px solid rgba(223, 223, 223, 0.2); transition: all 0.3s ease 0s; }
+.mvideo_more:hover { background-color: #fe7600; color: #fff; }
+.mvideo_title { color: #d2d2d2; }
+.mvideo_subtitle { color: #6b6b6b; }
+#footer p { text-align: left; }
+#fixed_videoPost .fixed-btn a { background-color: #353535; }
+#fixed_videoPost .fixed-btn a:hover { background-color: #fe7600; }
+#fixed_videoPost .fixed-btn a:hover i { color: #fff; }
+#fixed_videoPost .info_box .title { color: #bfbfbf; }
+#fixed_videoPost .info_box { padding: 24px 0 0; }
+.module.mvideom.mm102548 ul.content_list { margin-right: 2% !important; margin: 0 auto; }
+.mvideom.mvideom01 .videom_item .wrap:hover .title { color: #fe7600; }
+.mvideom.mvideom01 .videom_item .title { font-size: 16px; }
+#sitecontent .npagePage .content .fw { width: 1180px; }
+.npagePage .mvideo_title,  .npagePage .mvideo_subtitle { text-align: center; }
+#plheader { padding-bottom: 50px; }
+.npagePage #banner div { background-color: #040404; }
+#projectlist,  #indexPage #mproject .content .wrapper .content_list { width: 100% }
+.npagePage .bx-wrapper .bx-prev { left: 2%; }
+.npagePage .bx-wrapper .bx-next { right: 2%; }
+#indexPage a.more,  #indexPage a.details,  #sitecontent .npagePage a.details { width: 18%; }
+.Pagevideo.mvideom.mvideom01 .videom_item { width: calc(32% - 0px); margin-right: 16px; }
+.module.mvideom.mm102548 ul.content_list { width: 92%; }
+.module.mvideom.mm102548 ul.content_list li { width: 24% !important; }
+.module.mvideom.mm102548 ul.content_list li .wrap { margin-right: 20px !important; }
+#indexPage .mmap.module .content .header { padding-top: 80px; }
+#indexPage .mmap.module .content .header p.subtitle { margin-top: 0px; }
+#sitecontent .npagePage.formPage .content .header p.title,  #formpage .ui.checkbox label,  .ui.radio.checkbox label,  .formPage .formbox .list-item label.fl,  .ui.checkbox label,  .ui.radio.checkbox label,  .ui.checkbox label:hover,  .ui.checkbox+label:hover,  .verification label { color: #8a8a8a; }
+#indexPage .module .content .mvideo_title { top: 80px; }
+#indexPage .module.mvideom.mm102548 .mvideo_header { padding-top: 60px; }
+.formWrap .button { width: 24%; background-color: #3e3e3e; transition: all 0.6s ease 0s; }
+.formWrap .button:hover { background-color: #fe7600; color: #fff; }
+.formPage .content { width: 1180px; text-align: center; margin: 0 auto; }
+.nobanner #sitecontent .formPage .content .fw { width: auto; display: inline-block; text-align: center; }
+.formPage .content .postbody p { text-align: left; }
+/*
+
+#indexPage #mpartner .wrapper ul li a {
+
+
+
+}
+
+
+
+#indexPage #mpartner .wrapper ul li a {
+
+    width: 9%;
+
+    height: auto;
+
+    padding: 0 1%;
+
+}*/
+
+/*
+
+#indexPage #mpartner .wrapper {
+
+    height: auto;
+
+    width: 90%;
+
+}*/
+
+
+
+
+
+
+
+
+
+/* #indexPage #mpartner .wrapper ul li {
+
+    height: 80px;
+
+    margin-top: 10px;
+
+} */
+
+#indexPage #mpartner .wrapper { width: 100% }
+#indexPage #mpartner .wrapper .bx-wrapper { width: 90% }
+#indexPage #mpartner .wrapper ul li a { width: calc(100% / 8 - 40px); height: auto; margin-bottom: 0; margin-left: 20px; }
+#indexPage #mpartner .wrapper ul li { height: auto; }
+#indexPage #mpartner .bx-wrapper .bx-next i { margin-left: 16px; }
+.ui.form input[type=text] { background: rgb(49, 49, 49); border: 1px solid rgba(121, 121, 121, 0.29); color: rgba(125, 125, 125, 0.87); }
+.formPage .formbox textarea { background: rgb(49, 49, 49); border: 1px solid rgba(121, 121, 121, 0.29); color: rgba(125, 125, 125, 0.87); }
+.ui.selection.active.dropdown .menu { background: rgb(49, 49, 49); border: 1px solid rgba(121, 121, 121, 0.29); color: rgba(125, 125, 125, 0.87); }
+.ui.search.selection.dropdown>input.search { background: rgb(49, 49, 49); border: 1px solid rgba(121, 121, 121, 0.29); color: rgba(125, 125, 125, 0.87); }
+.ui.form textarea:focus,  .ui.form input:not([type]):focus, .ui.form input[type=date]:focus, .ui.form input[type=datetime-local]:focus, .ui.form input[type=email]:focus, .ui.form input[type=file]:focus, .ui.form input[type=number]:focus, .ui.form input[type=password]:focus, .ui.form input[type=search]:focus, .ui.form input[type=tel]:focus, .ui.form input[type=text]:focus, .ui.form input[type=time]:focus, .ui.form input[type=url]:focus { color: rgba(255, 255, 255, 0.95); border-color: #fe7600; border-radius: .28571429rem;
+background: #313131; }
+.ui.selection.dropdown .menu>.item { border-top: 1px solid #404040; }
+.ui.checkbox .box:before, .ui.checkbox label:before { background: #313131; border: 1px solid rgba(115, 115, 115, 0.21); }
+.ui.dropdown .menu>.item, .ui.dropdown .menu .selected.item, .ui.dropdown.selected { color: #9a9a9a; }
+.ui.selection.active.dropdown:hover .menu { border-color: #4a4a4a; box-shadow: 0 7px 13px 0 rgba(35, 35, 35, 0.32); }
+.ui.dropdown .menu>.item:hover { color: #fe7600; }
+.ui.selection.dropdown { background: #313131; border: 1px solid rgba(158, 158, 158, 0.15); }
+.ui.selection.visible.dropdown>.text:not(.default) { color: #fe7600; }
+.ui.search.dropdown>.text { color: #fe7600; }
+.ui.selection.dropdown:focus { border-color: #fe7600; }
+.ui.selection.active.dropdown:hover { border-color: #4a4a4a; }
+.ui.selection.active.dropdown { border-color: #464646; }
+.ui.selection.dropdown { color: rgb(107, 107, 107); }
+.ui.selection.dropdown:hover { border-color: rgb(70, 70, 70); }
+.ui.radio.checkbox input:focus:checked~.box:before, .ui.radio.checkbox input:focus:checked~label:before { background-color: #616161; }
+.ui.checkbox input:checked:focus~.box:before, .ui.checkbox input:checked:focus~label:before, .ui.checkbox input:not([type=radio]):indeterminate:focus~.box:before, .ui.checkbox input:not([type=radio]):indeterminate:focus~label:before { border-color: #616161; }
+.ui.checkbox input:focus~.box:before, .ui.checkbox input:focus~label:before { border-color: #464646; }
+.ui.radio.checkbox input:checked~.box:before, .ui.radio.checkbox input:checked~label:before { background-color: #272727; }
+.ui.checkbox input:checked~.box:before, .ui.checkbox input:checked~label:before { border-color: rgb(70, 70, 70); }
+.ui.checkbox .box:hover::before, .ui.checkbox label:hover::before { background: #313131; border-color: rgb(66, 66, 66); }
+.ui.checkbox .box:before, .ui.checkbox label:before { background: #313131; border: 1px solid rgba(115, 115, 115, 0.21); }
+.ui.radio.checkbox input:checked~.box:after, .ui.radio.checkbox input:checked~label:after { background-color: rgb(254, 118, 0); }
+.ui.form .field.error input:not([type]), .ui.form .field.error input[type=date], .ui.form .field.error input[type=datetime-local], .ui.form .field.error input[type=email], .ui.form .field.error input[type=file], .ui.form .field.error input[type=number], .ui.form .field.error input[type=password], .ui.form .field.error input[type=search], .ui.form .field.error input[type=tel], .ui.form .field.error input[type=text], .ui.form .field.error input[type=time], .ui.form .field.error input[type=url], .ui.form .field.error select, .ui.form .field.error textarea, .ui.form .fields.error .field input:not([type]), .ui.form .fields.error .field input[type=date], .ui.form .fields.error .field input[type=datetime-local], .ui.form .fields.error .field input[type=email], .ui.form .fields.error .field input[type=file], .ui.form .fields.error .field input[type=number], .ui.form .fields.error .field input[type=password], .ui.form .fields.error .field input[type=search], .ui.form .fields.error .field input[type=tel], .ui.form .fields.error .field input[type=text], .ui.form .fields.error .field input[type=time], .ui.form .fields.error .field input[type=url], .ui.form .fields.error .field select, .ui.form .fields.error .field textarea { background: #313131; border-color: #fe7600; color: #fe7600; }
+.ui.form .field.error input:not([type]):focus, .ui.form .field.error input[type=date]:focus, .ui.form .field.error input[type=datetime-local]:focus, .ui.form .field.error input[type=email]:focus, .ui.form .field.error input[type=file]:focus, .ui.form .field.error input[type=number]:focus, .ui.form .field.error input[type=password]:focus, .ui.form .field.error input[type=search]:focus, .ui.form .field.error input[type=tel]:focus, .ui.form .field.error input[type=text]:focus, .ui.form .field.error input[type=time]:focus, .ui.form .field.error input[type=url]:focus, .ui.form .field.error select:focus, .ui.form .field.error textarea:focus { background: #313131; border-color: #fe7600; color: #fe7600; }
+.verification #verification.error { background: #313131; border-color: #fe7600; color: #fe7600; }
+.ui.radio.checkbox input:focus~.box:before, .ui.radio.checkbox input:focus~label:before { background: #313131; }
+.ui.checkbox .box:hover::before, .ui.checkbox label:hover::before { background: #313131; }

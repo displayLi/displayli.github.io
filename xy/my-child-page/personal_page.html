@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”default” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black-translucent” />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>我的</title>
+    <link rel="stylesheet" href="../css/public_style.css">
+    <link rel="stylesheet" href="../css/home_page.css">
+    <link rel="shortcut icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523981236938&di=40c290739ac03a479ada10f572effc60&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160829%2F1472440979308369.jpg">
+    <style type="text/css">
+    html,
+    body {
+        background-color: #f3f5f9;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .bg-img {
+        width: 100%;
+        height: 135px;
+        background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524396994329&di=c7c3aac93fd82526f2bed7039e73127d&imgtype=0&src=http%3A%2F%2Fp1.gexing.com%2Fshaitu%2F20130306%2F1647%2F513702a86948d.jpg) no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .xiangji-icon {
+        width: 36px;
+        height: 27px;
+        position: absolute;
+        top: 92px;
+        left: 20px;
+    }
+
+    .xiangji {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: url(../images/xiangji.png)no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .head-icon {
+        position: absolute;
+        right: 26px;
+        top: 100px;
+        width: 66px;
+        height: 66px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .head-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .body-content {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .user-name-box {
+        width: 100%;
+    }
+
+    .user-name {
+        padding: 24px 26px 10px 26px;
+    }
+
+    .user-name a {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .user-data {
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .num-left {
+        display: flex;
+        width: 70%;
+    }
+
+    .num-box {
+        text-align: center;
+        flex: 1;
+    }
+
+    .num-box a {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .num-box .num {
+        padding-bottom: 4px;
+        font-weight: 500;
+        color: #222;
+    }
+
+    .num-box .details {
+        color: #888;
+    }
+
+    .data-btn {
+        position: absolute;
+        right: 20px;
+        top: 14px;
+        width: 80px;
+        height: 28px;
+        border: 1px solid #222;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .data-btn a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        color: #222;
+    }
+
+    .sex {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .sex a {
+        display: inline-block;
+        padding: 6px 0 10px 26px;
+        line-height: 26px;
+        position: relative;
+        width: 92%;
+    }
+
+    .sex a .came-time {
+        font-size: 12px;
+        color: #888;
+    }
+
+    .sex a .sex-text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .sex a::before {
+        content: '';
+        position: absolute;
+        top: 25px;
+        right: 6px;
+        background: url(../images/trade_arrow_icon.png)no-repeat;
+        width: 20px;
+        height: 20px;
+        background-position: center center;
+        -webkit-background-size: cover cover;
+        background-size: cover cover;
+    }
+
+    .credit-box {
+        background-color: #fff;
+        margin-top: 12px;
+    }
+
+    .my-buy,
+    .my-collection {
+        width: 84%;
+        height: 50px;
+        line-height: 50px;
+        margin-left: 50px;
+        position: relative;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .icon {
+        position: absolute;
+        left: -40px;
+        top: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .buy {
+        background: url(../images/user.png)no-repeat;
+        -webkit-background-size: 20px 20px;
+        background-size: 20px 20px;
+        background-position: center 6px;
+    }
+
+    .collection {
+        background: url(../images/credit_un_confirm.png)no-repeat;
+        -webkit-background-size: 20px 20px;
+        background-size: 20px 20px;
+        background-position: center 4px;
+    }
+
+    .menu-num {
+        float: right;
+        margin-right: 32px;
+        color: #666;
+    }
+
+    .right {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background: url(../images/ic_list_arrow.png) no-repeat;
+        background-position: center center;
+        -webkit-background-size: 20px 20px;
+        background-size: 20px 20px;
+    }
+
+    .tab-box {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        text-align: center;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .tab-bar {
+        flex: 1;
+        height: 100%;
+    }
+
+    .tab-bar a {
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+        line-height: 52px;
+        color: #888;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    a.active {
+        color: #000;
+        font-weight: 500;
+    }
+
+    .border-bottom {
+        position: absolute;
+        left: 24%;
+        margin-left: -33px;
+        top: 48px;
+        width: 75px;
+        height: 4px;
+        background-color: #ffd53b;
+        border-radius: 27px;
+        transition: left .2s;
+    }
+
+    .tab-body-new {
+        padding-top: 0;
+    }
+
+    .eval-box {
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .eval-head {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 20px;
+    }
+
+    .eval-user {
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .eval-img {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .eval-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .eval-name {
+        position: absolute;
+        top: 6px;
+        left: 56px;
+        color: #888;
+    }
+
+    .zan {
+        position: absolute;
+        right: 26px;
+        top: 2px;
+        width: 25px;
+        height: 25px;
+        background: url(../images/favour_yes_small.png)no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .eval-content {
+        padding: 2px 0 10px 50px;
+    }
+
+    .eval-content p {
+        color: #888;
+        font-size: 12px;
+    }
+
+    .eval-content p:nth-of-type(1) {
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #222;
+    }
+
+    .pad-top {
+        padding-top: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="bg-img">
+            <a href="javascript:void(0);" class="link-img"></a>
+        </div>
+        <div class="xiangji-icon">
+            <a href="javascript:void(0);" class="xiangji"></a>
+        </div>
+        <div class="head-icon">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524397757071&di=cf4d3282a5f273c433fa9c1feefb809c&imgtype=0&src=http%3A%2F%2Fimg3.pengfu.cn%2Fbig%2F43%2F761043.jpg" alt="">
+        </div>
+        <div class="body-content">
+            <div class="user-name-box">
+                <div class="user-name">
+                    <a href="javascript:void(0);">会飞的煤气罐</a>
+                </div>
+                <div class="user-data">
+                    <div class="num-left">
+                        <div class="num-box">
+                            <a href="javascript:void(0);">
+                                <p class="num">0</p>
+                                <p class="details">超赞</p>
+                            </a>
+                        </div>
+                        <div class="num-box">
+                            <a href="follow_page.html">
+                                <p class="num">0</p>
+                                <p class="details">关注</p>
+                            </a>
+                        </div>
+                        <div class="num-box">
+                            <a href="fans_page.html">
+                                <p class="num">0</p>
+                                <p class="details">粉丝</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="data-btn">
+                        <a href="javascriptvoid(0);" data-inenr='关注'>编辑资料</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sex">
+                <a href="javascript:void(0);">
+                    <div class="came-time">21分钟前来过咸鱼</div>
+                    <div class="sex-text">男生</div>
+                </a>
+            </div>
+        </div>
+        <div class="credit-box">
+            <a href="auth_renzheng.html">
+                <div class="my-buy">
+                    <i class="icon buy"></i>
+                    <span class="menu-name">实人认证</span>
+                    <span class="menu-num">未认证</span>
+                    <i class="right"></i>
+                </div>
+            </a>
+            <div class="my-collection">
+                <i class="icon collection"></i>
+                <span class="menu-name">芝麻信用</span>
+                <span class="menu-num">未授权</span>
+                <i class="right"></i>
+            </div>
+        </div>
+        <div class="tab-box">
+            <div class="tab-bar"><a class="active" href="javascript:void(0);">宝贝</a></div>
+            <div class="tab-bar"><a href="javascript:void(0);"><span>评价</span>•<span>2</span></a></div>
+            <i class="border-bottom"></i>
+        </div>
+        <div class="tab-body-new">
+            <div class="content-box">
+                <div class="content-head">
+                    <a href="javascript:void(0);"><img src="http://img.alicdn.com/tps/i1/TB1iT_8IFXXXXcSXpXXcy0wIpXX-70-70.png" alt=""></a>
+                    <div class="name-box">
+                        <p class="name">会飞的煤气罐</p>
+                        <p class="time">1小时以前来过</p>
+                    </div>
+                    <div class="price">
+                        <span class="rmb">¥</span><span class="number">100</span>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <a href="javascript:void(0);">
+                    <span><img src="http://m.360buyimg.com//mobilecms/s276x276_jfs/t11962/205/1211313658/308637/69df1964/59fefa5dN28466c68.jpg!q70.jpg" alt=""></span>
+                    <span><img src="http://m.360buyimg.com//mobilecms/s276x276_jfs/t7255/138/3405591210/92717/f852c937/59f69315Nabce9bb3.jpg!q70.jpg" alt=""></span>
+                    <span><img src="http://img.alicdn.com/bao/uploaded/i2/1053812432/TB20H_ncpXXXXb0XpXXXXXXXXXX_!!1053812432.jpg_160x160.jpg" alt=""></span>
+                </a>
+                </div>
+                <div class="content-title">
+                    <p>爱国者（aigo） 爱国者Q62机械鼠标有线 电脑笔记本台式牧马人吃鸡宏电竞游戏鼠标 黑色【送大桌垫】</p>
+                </div>
+                <div class="comment-box">
+                    <div class="comment-border">
+                        <p class="comment">会飞的煤气罐：这个是什么东西？</p>
+                        <p class="comment">主人回复：是的</p>
+                    </div>
+                </div>
+                <div class="map-box">
+                    <div class="map">
+                        <span class="from">来自<span class="diqu">北京</span></span>
+                        <span class="good">超赞<span class="good-num">2</span>&nbsp;•&nbsp;<span class="message">留言<span class="message-num">22</span></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-body-new">
+            <div class="eval-box">
+                <div class="eval-head">收到2条好评</div>
+                <div class="eval-user">
+                    <a class="eval-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524412097979&di=9920b8e70e084aff5320d555dead4ab6&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201508%2F11%2F20150811125021_x2zM8.thumb.700_0.jpeg" alt="">
+                    </a>
+                    <span class="eval-name">tb10325748</span>
+                    <i class="zan"></i>
+                </div>
+                <div class="eval-content">
+                    <p>很期待下次为你服务！</p>
+                    <p class="date-time"><span>2017-07-21</span>&nbsp;<span>13:00:16</span></p>
+                </div>
+            </div>
+            <div class="eval-box pad-top">
+                <div class="eval-user">
+                    <a class="eval-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524412097979&di=9920b8e70e084aff5320d555dead4ab6&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201508%2F11%2F20150811125021_x2zM8.thumb.700_0.jpeg" alt="">
+                    </a>
+                    <span class="eval-name">tb10325748</span>
+                    <i class="zan"></i>
+                </div>
+                <div class="eval-content">
+                    <p>很期待下次为你服务！</p>
+                    <p class="date-time"><span>2017-07-21</span>&nbsp;<span>13:00:16</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+// 全局变量
+let tab_body_new = document.querySelectorAll('.tab-body-new'),
+    tabBar = document.querySelectorAll('.tab-bar'),
+    tabBar_active = document.querySelectorAll('.tab-bar a'),
+    tab_borBtm = document.querySelector('.border-bottom');
+
+// tab 栏
+for (let i = 0; i < tabBar.length; i++) {
+    tab_body_new[0].style.display = 'block'; //先执行一次
+    tabBar[i].addEventListener('click', () => {
+        tab_borBtm.style.left = -51 + tab_borBtm.offsetWidth + '%';
+        for (var j = 0; j < tabBar.length; j++) {
+            tab_body_new[j].style.display = 'none';
+            tabBar_active[j].className = '';
+        }
+        tab_body_new[i].style.display = 'block';
+        tabBar_active[i].className = 'active';
+    })
+    tabBar[1].addEventListener('click', () => {
+        tab_borBtm.style.left = tab_borBtm.offsetWidth - 1 + '%';
+    })
+}
+</script>
+
+</html>

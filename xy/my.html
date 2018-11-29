@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”default” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black-translucent” />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>我的</title>
+    <link rel="stylesheet" href="css/public_style.css">
+    <link rel="stylesheet" href="css/tabBar_style.css">
+    <link rel="shortcut icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523981236938&di=40c290739ac03a479ada10f572effc60&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160829%2F1472440979308369.jpg">
+    <style type="text/css">
+    html,
+    body {
+        background-color: #f3f5f9;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .my-data {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .data-box {
+        width: 60%;
+        height: 100%;
+        text-align: left;
+        padding: 28px 8px;
+        float: left;
+    }
+
+    .my-top {
+        margin: 0 20px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+    .data-box .name {
+        font-size: 16px;
+        color: #111;
+        letter-spacing: .3px;
+        padding-top: 10px;
+    }
+
+    .data-box .my-style {
+        font-size: 14px;
+        color: #ccc;
+        padding-top: 6px;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+
+    .my-img {
+        width: 60px;
+        height: 60px;
+        float: right;
+        margin-top: 26px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-right: 14px;
+    }
+
+    .my-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .like-box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .like-box div {
+        flex: 1;
+        padding: 10px 0 8px 0;
+    }
+
+    .like-num {
+        font-size: 16px;
+        color: #252525;
+        font-weight: 500;
+    }
+
+    .exp {
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    .menu {
+        width: 100%;
+        margin-top: 14px;
+        background-color: #fff;
+    }
+
+    .my-buy,
+    .my-collection {
+        width: 84%;
+        height: 50px;
+        line-height: 50px;
+        margin-left: 50px;
+        position: relative;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .icon {
+        position: absolute;
+        left: -40px;
+        top: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .buy {
+        background: url(images/entry_icon.png)no-repeat;
+        -webkit-background-size: 24px 24px;
+        background-size: 24px 24px;
+        background-position: center 4px;
+    }
+
+    .collection {
+        background: url(images/icon_favourite.png)no-repeat;
+        -webkit-background-size: 20px 20px;
+        background-size: 20px 20px;
+        background-position: center 4px;
+    }
+
+    .set {
+        background: url(images/entry_icon_settings.png)no-repeat;
+        -webkit-background-size: 20px 20px;
+        background-size: 20px 20px;
+        background-position: center 4px;
+    }
+
+    .menu-num {
+        float: right;
+        margin-right: 32px;
+        color: #666;
+    }
+
+    .right {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background: url(images/ic_list_arrow.png) no-repeat;
+        background-position: center center;
+        -webkit-background-size: 20px 20px;
+        background-size: 20px 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="my-data">
+            <div class="my-top clearfix">
+                <div class="data-box">
+                    <h4 class="name">会飞的煤气罐</h4>
+                    <p class="my-style">虽然没赚到钱，但在心语开心就好</p>
+                </div>
+                <div class="my-img">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524307600368&di=c1e4bd495832255e62e1123bcb6a9122&imgtype=0&src=http%3A%2F%2Fmvimg2.meitudata.com%2F556d028d54cba6125.jpg" alt="">
+                </div>
+            </div>
+            <div class="like-box">
+                <div>
+                    <p class="like-num">0</p>
+                    <p class="exp">超赞</p>
+                </div>
+                <div>
+                    <a href="my-child-page/follow_page.html">
+                        <p class="like-num">1</p>
+                        <p class="exp">关注数</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="my-child-page/fans_page.html">
+                        <p class="like-num">0</p>
+                        <p class="exp">粉丝数</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="my-child-page/my-buying.html">
+                <div class="my-buy">
+                    <i class="icon buy"></i>
+                    <span class="menu-name">我买到的</span>
+                    <span class="menu-num">1</span>
+                    <i class="right"></i>
+                </div>
+            </a>
+            <a href="my-child-page/my-collection.html">
+                <div class="my-collection">
+                    <i class="icon collection"></i>
+                    <span class="menu-name">我收藏的</span>
+                    <span class="menu-num">20</span>
+                    <i class="right"></i>
+                </div>
+            </a>
+            <a href="my-child-page/setting.html">
+                <div class="my-collection">
+                    <i class="icon set"></i>
+                    <span class="menu-name">设置</span>
+                    <i class="right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+    <div class="tabBar">
+        <ul class="tabBar-ul">
+            <li class="tabBar-li">
+                <a href="index.html">
+                    <img src="images/comui_tab_home.png" alt="">
+                    <p class="tabbar-text">首页</p>
+                </a>
+            </li>
+            <li class="tabBar-li">
+                <a href="news.html">
+                    <img src="images/comui_tab_message.png" alt="">
+                    <p class="tabbar-text">消息</p>
+                </a>
+            </li>
+            <li class="tabBar-li">
+                <a href="my.html">
+                    <img src="images/comui_tab_person_selected.png" alt="">
+                    <p class="tabbar-text">我的</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    let my_top = document.querySelector('.my-top');
+    my_top.addEventListener('click', () => {
+        window.location.href = 'my-child-page/personal_page.html';
+    })
+</script>
+
+</html>

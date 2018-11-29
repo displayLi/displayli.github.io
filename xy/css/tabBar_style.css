@@ -1,0 +1,71 @@
+/* 底部导航栏 */
+
+.tabBar{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 640px;
+	min-width: 320px;
+	width: 100%;
+	height: 52px;
+	background-color: #fff;
+	border: 1px solid #eee;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.tabBar-ul{
+	list-style: none;
+	display: flex;
+}
+.tabBar-li{
+	flex: 1;
+	text-align: center;
+}
+.tabBar-li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding-top: 6px;
+	color: #444;
+}
+.tabBar-li a img{
+	width: 20px;
+	height: 20px;
+}
+
+/* 公共头部 */
+.main{
+	max-width: 640px;
+	min-width: 320px;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+.tab-box{
+	width:100%;
+	max-width: 640px;
+	min-width: 320px;
+	height: 48px;
+	display: flex;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	z-index: 3;
+	position: fixed;
+}
+
+.head-box{
+	width: 100%;
+	height: 48px;
+	background-color: #fdfdfd;
+	border-bottom: 1px solid #efefef;
+}
+.head-box .title{
+	text-align: center;
+	line-height: 48px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #323232;
+	letter-spacing: 1.5px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”default” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black” />
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black-translucent” />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>消息</title>
+    <link rel="stylesheet" href="../css/public_style.css">
+    <link rel="stylesheet" href="../css/tabBar_style.css">
+    <link rel="shortcut icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523981236938&di=40c290739ac03a479ada10f572effc60&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fuploadfile%2Fapp%2Ficon%2F20160829%2F1472440979308369.jpg">
+    <style type="text/css">
+    html,
+    body {
+        background-color: #f3f5f9;
+    }
+
+    .head-box {
+        position: relative;
+    }
+
+    .return-btn {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../images/return-icon.png)no-repeat;
+        -webkit-background-size: 30px 30px;
+        background-size: 30px 30px;
+        background-position: 5px 10px;
+        cursor: pointer;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .time {
+        display: inline-block;
+        padding: 3px 10px;
+        background-color: #ccc;
+        color: #fff;
+        font-weight: 500;
+        margin-top: 22px;
+        border-radius: 6px;
+        letter-spacing: 1px;
+    }
+
+    .content-box {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 20px;
+        text-align: left;
+    }
+
+    .content {
+        background-color: #fff;
+        line-height: 30px;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    }
+
+    .content .title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .content .details {
+        color: #979797;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .content img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="head-box">
+            <h4 class="title">通知</h4>
+            <i class="return-btn"></i>
+        </header>
+        <div class="container">
+            <span class="time">10:35</span>
+            <div class="content-box">
+                <div class="content">
+                    <div class="title">看片被抓</div>
+                    <p class="details">恭喜你又被抓一次，在抓3次我就会告诉你的妈妈～</p>
+                    <img class="image-banner" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524164463543&di=b64d5675570d037a2d85aec1d5e1ecac&imgtype=0&src=http%3A%2F%2Fimg.jsqq.net%2Fuploads%2Fallimg%2F140103%2F1_140103040325_10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <span class="time">2018年04月20日 00:35</span>
+            <div class="content-box">
+                <div class="content">
+                    <div class="title">看片被抓</div>
+                    <p class="details">恭喜你又被抓一次，在抓3次我就会告诉你的妈妈～</p>
+                    <img class="image-banner" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524164463543&di=b64d5675570d037a2d85aec1d5e1ecac&imgtype=0&src=http%3A%2F%2Fimg.jsqq.net%2Fuploads%2Fallimg%2F140103%2F1_140103040325_10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+let return_btn = document.querySelector('.return-btn');
+
+return_btn.addEventListener('click', () => {
+    window.location.href = '../news.html';
+})
+</script>
+
+</html>
